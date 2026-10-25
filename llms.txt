@@ -1,0 +1,52 @@
+# Nifuda
+
+> Nifuda keeps track of groceries, gadgets, tools and collections with location, quantity and value. Stored on your device, synced via iCloud if you like, no account needed.
+
+Nifuda is a home inventory app for iPhone and iPad. Free download, Pro as a one-time purchase.
+
+- App Store: https://apps.apple.com/us/app/id6782342697
+- Languages: Deutsch, English, Español, Français, Italiano, 日本語, 简体中文, 繁體中文, 한국어, Nederlands, Polski, Português (BR), Русский, Türkçe
+
+## Features
+- **Add an item in seconds.** Scan a barcode or type a name. Add quantity, price and location; batches keep track of purchase and expiry dates.
+- **Organised your way.** Create your own tags and tag groups, by category or status. Lists bring together what belongs together.
+- **Reminded in time.** Nifuda shows what expires soon and what drops below your minimum stock, so you know what's missing before you shop.
+- **Know what it's worth.** Total value, value by location and what was used this month. Useful for insurance, moving house or simply staying on top of things.
+- **More room for your inventory.** On iPad you see your entire inventory at a glance. With iCloud, iPhone and iPad stay in sync automatically.
+
+## Privacy
+- **No account** No sign-up, no email address, no password. Open the app and start.
+- **No tracking** Nifuda contains no analytics or advertising tools. We can't see what you add.
+- **Your iCloud** Data is stored on your device and, optionally, in your private iCloud. There is no Nifuda server.
+
+## FAQ
+### Do I need an account?
+No. Nifuda works without sign-up. Your data lives on your device.
+
+### Where is my data stored?
+Locally on your iPhone or iPad. If you like, Nifuda syncs between your devices through your private iCloud.
+
+### How much does Nifuda cost?
+The download is free. Nifuda Pro unlocks every feature with a one-time purchase, no subscription.
+
+### Can I export my inventory?
+Yes, as a PDF report with values, quantities and locations, for example for your home insurance.
+
+### Which devices does Nifuda run on?
+iPhone and iPad. A Pro purchase applies to all devices using the same Apple ID.
+
+## Pages
+- [Deutsch](https://nifuda.app/de/)
+- [English](https://nifuda.app/en/)
+- [Español](https://nifuda.app/es/)
+- [Français](https://nifuda.app/fr/)
+- [Italiano](https://nifuda.app/it/)
+- [日本語](https://nifuda.app/ja/)
+- [简体中文](https://nifuda.app/zh/)
+- [繁體中文](https://nifuda.app/zh-hant/)
+- [한국어](https://nifuda.app/ko/)
+- [Nederlands](https://nifuda.app/nl/)
+- [Polski](https://nifuda.app/pl/)
+- [Português (BR)](https://nifuda.app/pt/)
+- [Русский](https://nifuda.app/ru/)
+- [Türkçe](https://nifuda.app/tr/)

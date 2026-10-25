@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nifuda – App de inventario para iPhone y iPad</title>
+<meta name="description" content="Nifuda registra despensa, tecnología, herramientas y colecciones con ubicación, cantidad y valor. Guardado en tu dispositivo, sincronizado por iCloud si quieres y sin cuenta.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://nifuda.app/es/">
+<meta name="nf-lang" content="es">
+<meta name="nf-page" content="home">
+<meta name="nf-base" content="../">
+<meta name="apple-itunes-app" content="app-id=6782342697">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nifuda">
+<meta property="og:url" content="https://nifuda.app/es/">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Nifuda – App de inventario para iPhone y iPad">
+<meta property="og:description" content="Nifuda registra despensa, tecnología, herramientas y colecciones con ubicación, cantidad y valor. Guardado en tu dispositivo, sincronizado por iCloud si quieres y sin cuenta.">
+<meta property="og:image" content="https://nifuda.app/assets/screens/es/home.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" hreflang="de" href="https://nifuda.app/de/">
+<link rel="alternate" hreflang="en" href="https://nifuda.app/en/">
+<link rel="alternate" hreflang="es" href="https://nifuda.app/es/">
+<link rel="alternate" hreflang="fr" href="https://nifuda.app/fr/">
+<link rel="alternate" hreflang="it" href="https://nifuda.app/it/">
+<link rel="alternate" hreflang="ja" href="https://nifuda.app/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://nifuda.app/zh/">
+<link rel="alternate" hreflang="zh-Hant" href="https://nifuda.app/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://nifuda.app/ko/">
+<link rel="alternate" hreflang="nl" href="https://nifuda.app/nl/">
+<link rel="alternate" hreflang="pl" href="https://nifuda.app/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://nifuda.app/pt/">
+<link rel="alternate" hreflang="ru" href="https://nifuda.app/ru/">
+<link rel="alternate" hreflang="tr" href="https://nifuda.app/tr/">
+<link rel="alternate" hreflang="x-default" href="https://nifuda.app/en/">
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"MobileApplication","name":"Nifuda","url":"https://nifuda.app/es/","inLanguage":"es-ES","operatingSystem":"iOS, iPadOS","applicationCategory":"LifestyleApplication","description":"Nifuda registra despensa, tecnología, herramientas y colecciones con ubicación, cantidad y valor. Guardado en tu dispositivo, sincronizado por iCloud si quieres y sin cuenta.","image":"https://nifuda.app/assets/screens/es/home.jpg","downloadUrl":"https://apps.apple.com/es/app/id6782342697","featureList":["Registrar: Escanea un código de barras o escribe el nombre. Añade cantidad, precio y ubicación; los lotes guardan la fecha de compra y de caducidad.","Etiquetas: Crea tus propias etiquetas y grupos, por categoría o estado. Las listas reúnen lo que va junto.","Avisos: Nifuda muestra lo que caduca pronto y lo que baja del stock mínimo, para que sepas qué falta antes de ir a comprar.","Estadísticas: Valor total, valor por ubicación y lo consumido este mes. Útil para el seguro, una mudanza o simplemente para tener una visión general.","Sin cuenta","Local e iCloud","Escáner de códigos","iPhone y iPad"],"offers":[{"@type":"Offer","price":"0","priceCurrency":"EUR","description":"Descarga gratuita, Pro con pago único"},{"@type":"Offer","name":"Nifuda Pro","price":"5.79","priceCurrency":"EUR"}],"publisher":{"@type":"Organization","name":"Nifuda","url":"https://nifuda.app"}},{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"es-ES","mainEntity":[{"@type":"Question","name":"¿Necesito una cuenta?","acceptedAnswer":{"@type":"Answer","text":"No. Nifuda funciona sin registro. Tus datos están en tu dispositivo."}},{"@type":"Question","name":"¿Dónde se guardan mis datos?","acceptedAnswer":{"@type":"Answer","text":"En local, en tu iPhone o iPad. Si quieres, Nifuda sincroniza tus dispositivos a través de tu iCloud privado."}},{"@type":"Question","name":"¿Cuánto cuesta Nifuda?","acceptedAnswer":{"@type":"Answer","text":"La descarga es gratuita. Nifuda Pro desbloquea todas las funciones con un pago único, sin suscripción."}},{"@type":"Question","name":"¿Puedo exportar mi inventario?","acceptedAnswer":{"@type":"Answer","text":"Sí, como informe PDF con valores, cantidades y ubicaciones, por ejemplo para el seguro del hogar."}},{"@type":"Question","name":"¿En qué dispositivos funciona Nifuda?","acceptedAnswer":{"@type":"Answer","text":"En iPhone y iPad. La compra de Pro sirve para todos los dispositivos con el mismo Apple ID."}}]}]</script>
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { margin:0; background:#F3F2EF; }
+    a { color:#121212; text-decoration:none; }
+    a:hover { color:#E5484D; }
+    ::selection { background:#121212; color:#F3F2EF; }
+  </style>
+</helmet>
+
+<div data-screen-label="Nifuda Website" lang="{{ lang }}" style="background:#F3F2EF; color:#121212; font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Helvetica Neue','Hiragino Sans','PingFang SC','Noto Sans JP','Noto Sans SC',system-ui,sans-serif; -webkit-font-smoothing:antialiased; overflow-x:clip; min-height:100vh;">
+
+  <header style="position:sticky; top:0; z-index:50; background:rgba(243,242,239,0.86); backdrop-filter:saturate(180%) blur(16px); -webkit-backdrop-filter:saturate(180%) blur(16px); border-bottom:1px solid rgba(18,18,18,0.08);">
+    <div style="max-width:1240px; margin:0 auto; padding:0 24px; height:68px; display:flex; align-items:center; justify-content:space-between; gap:20px;">
+      <a href="{{ hrefHome }}" onClick="{{ goHome }}" style="display:flex; align-items:center; gap:10px; color:#121212;">
+        <svg viewBox="0 0 1024 1024" width="28" height="28" style="display:block;"><g fill="none" stroke="#121212" stroke-width="48" stroke-linejoin="round" stroke-linecap="round"><path d="M512 252 L702 442 L702 716 L322 716 L322 442 Z"></path><circle cx="512" cy="362" r="20" stroke-width="38"></circle><line x1="478" y1="512" x2="478" y2="662" stroke-width="42"></line><line x1="546" y1="512" x2="546" y2="662" stroke-width="42"></line><line x1="438" y1="549" x2="586" y2="549" stroke-width="42"></line><line x1="438" y1="625" x2="586" y2="625" stroke-width="42"></line></g></svg>
+        <span style="font-size:20px; font-weight:800; letter-spacing:-0.035em;">Nifuda</span>
+      </a>
+      <div style="display:flex; align-items:center; gap:28px;">
+        <sc-if value="{{ showNav }}" hint-placeholder-val="{{ true }}">
+          <nav style="display:flex; align-items:center; gap:26px; font-size:15px; font-weight:500;">
+            <a href="{{ hrefFeatures }}" style="color:#3A3A37;">{{ t.nav_features }}</a>
+            <a href="{{ hrefPrivacySection }}" style="color:#3A3A37;">{{ t.nav_privacy }}</a>
+            <a href="{{ hrefFaq }}" style="color:#3A3A37;">{{ t.nav_faq }}</a>
+          </nav>
+        </sc-if>
+        <div style="position:relative;">
+          <button onClick="{{ toggleLang }}" aria-label="Language" style="display:flex; align-items:center; gap:7px; height:38px; padding:0 14px; border-radius:999px; border:1px solid rgba(18,18,18,0.14); background:#FFFFFF; font-family:inherit; font-size:14px; font-weight:600; color:#121212; cursor:pointer;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#121212" stroke-width="1.8"><circle cx="12" cy="12" r="9.2"></circle><path d="M3 12h18M12 2.8c2.6 2.6 3.9 5.6 3.9 9.2s-1.3 6.6-3.9 9.2M12 2.8C9.4 5.4 8.1 8.4 8.1 12s1.3 6.6 3.9 9.2"></path></svg>
+            <span>{{ langCode }}</span>
+          </button>
+          <sc-if value="{{ langOpen }}" hint-placeholder-val="{{ false }}">
+            <div style="position:absolute; right:0; top:46px; background:#FFFFFF; border:1px solid rgba(18,18,18,0.1); border-radius:16px; padding:6px; min-width:190px; box-shadow:0 24px 50px -20px rgba(0,0,0,0.25); display:flex; flex-direction:column;">
+              <sc-for list="{{ langList }}" as="l" hint-placeholder-count="7">
+                <a href="{{ l.href }}" onClick="{{ l.onClick }}" hreflang="{{ l.code }}" style="display:flex; justify-content:space-between; align-items:center; gap:16px; padding:10px 12px; border-radius:10px; font-size:15px; color:#121212; background:{{ l.bg }};" style-hover="background:#F3F2EF;">
+                  <span style="font-weight:{{ l.weight }};">{{ l.name }}</span>
+                  <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:11px; color:#8A8983;">{{ l.code }}</span>
+                </a>
+              </sc-for>
+            </div>
+          </sc-if>
+        </div>
+        <sc-if value="{{ showNav }}" hint-placeholder-val="{{ true }}">
+          <a href="{{ storeUrl }}" aria-label="App Store" style="display:block;"><img src="{{ badge }}" alt="App Store" style="height:38px; width:auto; display:block;"></a>
+        </sc-if>
+      </div>
+    </div>
+  </header>
+
+  <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+    <main>
+      <section style="max-width:1240px; margin:0 auto; padding:{{ heroPad }}; display:grid; grid-template-columns:{{ heroCols }}; gap:56px; align-items:center;">
+        <div style="min-width:0;">
+          <div style="display:flex; align-items:center; gap:10px; margin-bottom:28px;">
+            <span style="width:8px; height:8px; border-radius:50%; background:#E5484D;"></span>
+            <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#6B6A65;">{{ t.hero_kicker }}</span>
+          </div>
+          <h1 style="margin:0; font-size:clamp(46px, 7.4vw, 100px); line-height:0.94; letter-spacing:-0.05em; font-weight:800; text-wrap:balance;">{{ t.hero_h }}</h1>
+          <p style="margin:30px 0 0; max-width:500px; font-size:20px; line-height:1.5; color:#55544F; text-wrap:pretty;">{{ t.hero_sub }}</p>
+          <div style="margin-top:40px; display:flex; align-items:center; gap:18px; flex-wrap:wrap;">
+            <a href="{{ storeUrl }}" aria-label="App Store" style="display:block;"><img src="{{ badge }}" alt="App Store" style="height:56px; width:auto; display:block;"></a>
+            <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:12px; line-height:1.5; color:#6B6A65; white-space:pre-line;">{{ t.hero_note }}</span>
+          </div>
+        </div>
+        <div style="position:relative; display:flex; justify-content:center; min-width:0; padding:20px 0 40px;">
+          <div aria-hidden="true" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-54%); font-size:clamp(200px, 26vw, 360px); font-weight:800; line-height:1; color:#E8E6E1; letter-spacing:-0.04em; white-space:nowrap; user-select:none;">荷札</div>
+          <div style="position:relative; width:312px; max-width:78vw; aspect-ratio:1320/2868; border-radius:52px; background:#121212; padding:10px; box-sizing:border-box; box-shadow:0 60px 100px -50px rgba(0,0,0,0.5), 0 14px 30px -14px rgba(0,0,0,0.25);">
+            <div style="position:relative; width:100%; height:100%; border-radius:43px; overflow:hidden; background:#F3F2EF;">
+              <img src="{{ img.home }}" alt="{{ t.alt_home }}" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block;">
+            </div>
+          </div>
+          <div style="position:absolute; left:{{ tagLeft }}; bottom:14px; transform:rotate(-7deg); transform-origin:100% 50%; filter:drop-shadow(0 22px 28px rgba(0,0,0,0.22));">
+            <div style="position:relative; width:250px; background:#FFFDF8; clip-path:polygon(34px 0, 100% 0, 100% 100%, 34px 100%, 0 50%); padding:18px 20px 18px 50px; box-sizing:border-box;">
+              <div style="position:absolute; left:20px; top:50%; width:12px; height:12px; margin-top:-6px; border-radius:50%; background:#F3F2EF; box-shadow:inset 0 0 0 2px #121212;"></div>
+              <div style="font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:10px; letter-spacing:0.08em; color:#8A8983;">ITM-2026-8E2F0F</div>
+              <div style="margin-top:6px; font-size:19px; font-weight:800; letter-spacing:-0.03em;">AirPods Max</div>
+              <div style="margin-top:10px; display:flex; justify-content:space-between; align-items:baseline; gap:10px; padding-top:10px; border-top:1px dashed rgba(18,18,18,0.2);">
+                <span style="font-size:12px; color:#6B6A65;">{{ t.tag_place }}</span>
+                <span style="font-size:15px; font-weight:700;">{{ tagPrice }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section style="max-width:1240px; margin:0 auto; padding:0 24px 40px;">
+        <div style="display:grid; grid-template-columns:{{ factCols }}; border-top:1px solid rgba(18,18,18,0.12);">
+          <sc-for list="{{ facts }}" as="f" hint-placeholder-count="4">
+            <div style="padding:20px 20px 20px 0; display:flex; gap:12px; align-items:baseline;">
+              <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:11px; color:#E5484D;">{{ f.n }}</span>
+              <span style="font-size:15px; font-weight:600;">{{ f.label }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </section>
+
+      <section id="features" style="max-width:1240px; margin:0 auto; padding:{{ secPad }};">
+        <div style="max-width:720px; margin-bottom:24px;">
+          <div style="font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#6B6A65; margin-bottom:18px;">{{ t.feat_k }}</div>
+          <h2 style="margin:0; font-size:clamp(36px, 5vw, 64px); line-height:1; letter-spacing:-0.045em; font-weight:800; text-wrap:balance;">{{ t.feat_h }}</h2>
+        </div>
+        <div style="display:grid; grid-template-columns:{{ featCols }}; gap:64px;">
+          <div style="min-width:0;">
+            <sc-for list="{{ feats }}" as="f" hint-placeholder-count="4">
+              <div data-feat="{{ $index }}" style="min-height:{{ featMinH }}; display:flex; flex-direction:column; justify-content:center; gap:22px; padding:40px 0; border-bottom:1px solid rgba(18,18,18,0.1); opacity:{{ f.opacity }}; transition:opacity .4s ease;">
+                <div style="display:flex; align-items:center; gap:12px; font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:12px; letter-spacing:0.1em; text-transform:uppercase;">
+                  <span style="color:#E5484D;">{{ f.n }}</span>
+                  <span style="color:#6B6A65;">{{ f.k }}</span>
+                </div>
+                <h3 style="margin:0; font-size:clamp(30px, 3.6vw, 46px); line-height:1.04; letter-spacing:-0.04em; font-weight:800; max-width:520px; text-wrap:balance;">{{ f.h }}</h3>
+                <p style="margin:0; font-size:18px; line-height:1.6; color:#55544F; max-width:480px; text-wrap:pretty;">{{ f.b }}</p>
+                <sc-if value="{{ narrow }}" hint-placeholder-val="{{ false }}">
+                  <div style="margin-top:16px; width:260px; max-width:100%; aspect-ratio:1320/2868; border-radius:44px; background:#121212; padding:9px; box-sizing:border-box; box-shadow:0 40px 70px -40px rgba(0,0,0,0.45);">
+                    <div style="width:100%; height:100%; border-radius:36px; overflow:hidden;"><img src="{{ f.img }}" alt="{{ f.h }}" loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+                  </div>
+                </sc-if>
+              </div>
+            </sc-for>
+          </div>
+          <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+            <div style="min-width:0;">
+              <div style="position:sticky; top:110px; display:flex; justify-content:center;">
+                <div style="position:relative; width:300px; aspect-ratio:1320/2868; border-radius:50px; background:#121212; padding:10px; box-sizing:border-box; box-shadow:0 60px 100px -50px rgba(0,0,0,0.5), 0 14px 30px -14px rgba(0,0,0,0.22);">
+                  <div style="position:relative; width:100%; height:100%; border-radius:41px; overflow:hidden; background:#F3F2EF;">
+                    <sc-for list="{{ feats }}" as="f" hint-placeholder-count="1">
+                      <img src="{{ f.img }}" alt="{{ f.h }}" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; opacity:{{ f.imgOpacity }}; transition:opacity .45s ease;">
+                    </sc-for>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </sc-if>
+        </div>
+      </section>
+
+      <section style="max-width:1240px; margin:0 auto; padding:{{ secPad }}; display:grid; grid-template-columns:{{ heroCols }}; gap:64px; align-items:center;">
+        <div style="min-width:0; display:flex; justify-content:center;">
+          <div style="width:500px; max-width:100%; aspect-ratio:2064/2752; border-radius:40px; background:#121212; padding:14px; box-sizing:border-box; box-shadow:0 60px 100px -50px rgba(0,0,0,0.45);">
+            <div style="width:100%; height:100%; border-radius:27px; overflow:hidden; background:#F3F2EF;"><img src="{{ img.ipad }}" alt="{{ t.ipad_h }}" loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+          </div>
+        </div>
+        <div style="min-width:0;">
+          <div style="font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#6B6A65; margin-bottom:18px;">{{ t.ipad_k }}</div>
+          <h2 style="margin:0; font-size:clamp(34px, 4.4vw, 56px); line-height:1.02; letter-spacing:-0.045em; font-weight:800; text-wrap:balance;">{{ t.ipad_h }}</h2>
+          <p style="margin:24px 0 0; font-size:18px; line-height:1.6; color:#55544F; max-width:460px; text-wrap:pretty;">{{ t.ipad_b }}</p>
+        </div>
+      </section>
+
+      <section id="privacy" style="background:#121212; color:#F3F2EF;">
+        <div style="max-width:1240px; margin:0 auto; padding:{{ secPad }};">
+          <div style="display:flex; align-items:center; gap:10px; margin-bottom:26px;">
+            <span style="width:8px; height:8px; border-radius:50%; background:#E5484D;"></span>
+            <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#A5A49E;">{{ t.priv_k }}</span>
+          </div>
+          <h2 style="margin:0; max-width:900px; font-size:clamp(40px, 6.4vw, 88px); line-height:0.96; letter-spacing:-0.05em; font-weight:800; text-wrap:balance;">{{ t.priv_h }}</h2>
+          <div style="margin-top:72px; display:grid; grid-template-columns:{{ privCols }}; gap:40px;">
+            <sc-for list="{{ t.priv_pts }}" as="p" hint-placeholder-count="3">
+              <div style="padding-top:22px; border-top:1px solid rgba(243,242,239,0.18);">
+                <div style="font-size:20px; font-weight:700; letter-spacing:-0.02em;">{{ p.h }}</div>
+                <p style="margin:12px 0 0; font-size:16px; line-height:1.6; color:#B5B4AE; text-wrap:pretty;">{{ p.b }}</p>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" style="max-width:1240px; margin:0 auto; padding:{{ secPad }}; display:grid; grid-template-columns:{{ faqCols }}; gap:48px;">
+        <div style="min-width:0;">
+          <div style="font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#6B6A65; margin-bottom:18px;">{{ t.faq_k }}</div>
+          <h2 style="margin:0; font-size:clamp(34px, 4.4vw, 56px); line-height:1.02; letter-spacing:-0.045em; font-weight:800; text-wrap:balance;">{{ t.faq_h }}</h2>
+        </div>
+        <div style="min-width:0; border-top:1px solid rgba(18,18,18,0.14);">
+          <sc-for list="{{ faqs }}" as="q" hint-placeholder-count="5">
+            <div style="border-bottom:1px solid rgba(18,18,18,0.14);">
+              <button onClick="{{ q.toggle }}" aria-expanded="{{ q.open }}" style="width:100%; display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; background:none; border:none; cursor:pointer; font-family:inherit; text-align:left; color:#121212;">
+                <span style="font-size:19px; font-weight:650; letter-spacing:-0.015em;">{{ q.q }}</span>
+                <span style="flex:0 0 auto; width:30px; height:30px; border-radius:50%; background:{{ q.iconBg }}; color:{{ q.iconCol }}; display:flex; align-items:center; justify-content:center; font-size:18px; line-height:1; transition:all .2s ease;">{{ q.icon }}</span>
+              </button>
+              <sc-if value="{{ q.open }}" hint-placeholder-val="{{ false }}">
+                <p style="margin:0; padding:0 50px 26px 0; font-size:17px; line-height:1.6; color:#55544F; text-wrap:pretty;">{{ q.a }}</p>
+              </sc-if>
+            </div>
+          </sc-for>
+        </div>
+      </section>
+
+      <section id="download" style="max-width:1240px; margin:0 auto; padding:0 24px 110px;">
+        <div style="background:#FFFFFF; border-radius:36px; padding:{{ ctaPad }}; display:flex; flex-direction:column; align-items:center; text-align:center; gap:26px;">
+          <svg viewBox="0 0 1024 1024" width="64" height="64" style="display:block;"><g fill="none" stroke="#121212" stroke-width="40" stroke-linejoin="round" stroke-linecap="round"><path d="M512 252 L702 442 L702 716 L322 716 L322 442 Z"></path><circle cx="512" cy="362" r="20" stroke-width="34" stroke="#E5484D"></circle><line x1="478" y1="512" x2="478" y2="662"></line><line x1="546" y1="512" x2="546" y2="662"></line><line x1="438" y1="549" x2="586" y2="549"></line><line x1="438" y1="625" x2="586" y2="625"></line></g></svg>
+          <h2 style="margin:0; max-width:760px; font-size:clamp(38px, 5.6vw, 76px); line-height:0.98; letter-spacing:-0.05em; font-weight:800; text-wrap:balance;">{{ t.cta_h }}</h2>
+          <p style="margin:0; max-width:520px; font-size:19px; line-height:1.5; color:#55544F;">{{ t.cta_b }}</p>
+          <a href="{{ storeUrl }}" aria-label="App Store" style="display:block; margin-top:8px;"><img src="{{ badge }}" alt="App Store" style="height:58px; width:auto; display:block;"></a>
+        </div>
+      </section>
+    </main>
+  </sc-if>
+
+  <sc-if value="{{ isLegal }}" hint-placeholder-val="{{ false }}">
+    <main style="max-width:760px; margin:0 auto; padding:80px 24px 120px;">
+      <a href="{{ hrefHome }}" onClick="{{ goHome }}" style="display:inline-flex; align-items:center; gap:8px; font-size:14px; font-weight:600; color:#6B6A65;">← {{ t.back }}</a>
+      <h1 style="margin:28px 0 0; font-size:clamp(40px, 6vw, 72px); line-height:1; letter-spacing:-0.05em; font-weight:800;">{{ legalTitle }}</h1>
+      <div style="margin-top:16px; font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:12px; color:#8A8983;">{{ legalMeta }}</div>
+      <div style="margin-top:56px; display:flex; flex-direction:column; gap:40px;">
+        <sc-for list="{{ legalSections }}" as="s" hint-placeholder-count="5">
+          <div style="padding-top:22px; border-top:1px solid rgba(18,18,18,0.12);">
+            <h2 style="margin:0; font-size:21px; font-weight:700; letter-spacing:-0.02em;">{{ s.h }}</h2>
+            <p style="margin:12px 0 0; font-size:17px; line-height:1.65; color:#3F3E3A; white-space:pre-line; text-wrap:pretty;">{{ s.b }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </main>
+  </sc-if>
+
+  <footer style="border-top:1px solid rgba(18,18,18,0.1);">
+    <div style="max-width:1240px; margin:0 auto; padding:56px 24px 40px; display:flex; justify-content:space-between; gap:40px; flex-wrap:wrap;">
+      <div style="max-width:320px;">
+        <div style="display:flex; align-items:baseline; gap:10px;">
+          <span style="font-size:22px; font-weight:800; letter-spacing:-0.035em;">Nifuda</span>
+          <span style="font-size:13px; color:#8A8983;">荷札</span>
+        </div>
+        <p style="margin:12px 0 0; font-size:14px; line-height:1.55; color:#6B6A65;">{{ t.foot_tag }}</p>
+      </div>
+      <div style="display:flex; gap:56px; flex-wrap:wrap; font-size:14px;">
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <div style="font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#8A8983;">{{ t.foot_legal }}</div>
+          <a href="{{ hrefPrivacy }}" style="color:#3A3A37;">{{ t.pp_title }}</a>
+          <a href="{{ hrefImprint }}" style="color:#3A3A37;">{{ t.im_title }}</a>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1240px; margin:0 auto; padding:20px 24px 36px; display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; font-size:12px; color:#8A8983;">
+      <span>© 2026 Nifuda</span>
+      <span>{{ t.foot_apple }}</span>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;lang&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;de&quot;,&quot;en&quot;,&quot;es&quot;,&quot;fr&quot;,&quot;it&quot;,&quot;ja&quot;,&quot;zh&quot;,&quot;zh-hant&quot;,&quot;ko&quot;,&quot;nl&quot;,&quot;pl&quot;,&quot;pt&quot;,&quot;ru&quot;,&quot;tr&quot;],&quot;default&quot;:&quot;de&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+const APP_ID = "6782342697";
+const EMAIL = "contact.bortmes@icloud.com";
+const LANGS = [
+  { code: "de", name: "Deutsch", store: "de", locale: "de-DE", cur: "EUR" },
+  { code: "en", name: "English", store: "us", locale: "en-US", cur: "USD" },
+  { code: "es", name: "Español", store: "es", locale: "es-ES", cur: "EUR" },
+  { code: "fr", name: "Français", store: "fr", locale: "fr-FR", cur: "EUR" },
+  { code: "it", name: "Italiano", store: "it", locale: "it-IT", cur: "EUR" },
+  { code: "ja", name: "日本語", store: "jp", locale: "ja-JP", cur: "JPY" },
+  { code: "zh", name: "简体中文", store: "cn", locale: "zh-CN", cur: "CNY", short: "简中" },
+  { code: "zh-hant", name: "繁體中文", store: "tw", locale: "zh-TW", cur: "TWD", short: "繁中" },
+  { code: "ko", name: "한국어", store: "kr", locale: "ko-KR", cur: "KRW" },
+  { code: "nl", name: "Nederlands", store: "nl", locale: "nl-NL", cur: "EUR" },
+  { code: "pl", name: "Polski", store: "pl", locale: "pl-PL", cur: "PLN" },
+  { code: "pt", name: "Português (BR)", store: "br", locale: "pt-BR", cur: "BRL" },
+  { code: "ru", name: "Русский", store: "ru", locale: "ru-RU", cur: "RUB" },
+  { code: "tr", name: "Türkçe", store: "tr", locale: "tr-TR", cur: "TRY" }
+];
+const PRICE = { EUR: 579, USD: 549, JPY: 84800, CNY: 4399, TWD: 17900, KRW: 769000, PLN: 2599, BRL: 4599, RUB: 64990, TRY: 25999 };
+
+const T = {
+de: {
+  nav_features: "Funktionen", nav_privacy: "Datenschutz", nav_faq: "FAQ",
+  hero_kicker: "Inventar-App für iPhone & iPad",
+  hero_h: "Alles, was du besitzt. An einem Ort.",
+  hero_sub: "Nifuda erfasst Vorräte, Technik, Werkzeug und Sammlungen mit Lagerplatz, Menge und Wert. Auf deinem Gerät gespeichert, auf Wunsch per iCloud synchronisiert und ganz ohne Account.",
+  hero_note: "Kostenlos laden\nPro als Einmalkauf",
+  facts: ["Kein Account", "Lokal & iCloud", "Barcode-Scanner", "iPhone & iPad"],
+  tag_place: "Schreibtisch", alt_home: "Nifuda Startbildschirm",
+  feat_k: "Funktionen", feat_h: "Gebaut für den Haushalt, nicht fürs Lager.",
+  feats: [
+    { k: "Erfassen", h: "Ein Artikel in Sekunden.", b: "Barcode scannen oder Namen tippen. Menge, Preis und Lagerplatz kommen dazu, Chargen behalten Kaufdatum und Haltbarkeit im Blick." },
+    { k: "Tags", h: "Ordnung nach deinem System.", b: "Lege eigene Tags und Tag-Gruppen an, etwa nach Kategorie oder Status. Listen fassen zusammen, was zusammengehört." },
+    { k: "Meldungen", h: "Rechtzeitig erinnert.", b: "Nifuda zeigt, was bald abläuft und was unter den Mindestbestand fällt. So weißt du vor dem Einkauf, was fehlt." },
+    { k: "Statistik", h: "Den Wert im Blick.", b: "Gesamtwert, Wert nach Lagerplatz und was diesen Monat verbraucht wurde. Hilfreich für Versicherung, Umzug oder einfach den Überblick." }
+  ],
+  ipad_k: "iPad", ipad_h: "Mehr Platz für deinen Bestand.", ipad_b: "Auf dem iPad siehst du deinen gesamten Bestand auf einen Blick. Mit iCloud bleiben iPhone und iPad automatisch auf demselben Stand.",
+  priv_k: "Datenschutz", priv_h: "Deine Daten bleiben bei dir.",
+  priv_pts: [
+    { h: "Kein Account", b: "Keine Registrierung, keine E-Mail-Adresse, kein Passwort. Du öffnest die App und legst los." },
+    { h: "Kein Tracking", b: "Nifuda enthält keine Analyse- oder Werbe-Tools. Wir sehen nicht, was du erfasst." },
+    { h: "Deine iCloud", b: "Gespeichert wird auf deinem Gerät und optional in deiner privaten iCloud. Ein Nifuda-Server existiert nicht." }
+  ],
+  faq_k: "FAQ", faq_h: "Häufige Fragen", faq_more: "Noch etwas offen? Schreib uns:",
+  faqs: [
+    { q: "Brauche ich einen Account?", a: "Nein. Nifuda funktioniert ohne Registrierung. Deine Daten liegen auf deinem Gerät." },
+    { q: "Wo werden meine Daten gespeichert?", a: "Lokal auf deinem iPhone oder iPad. Wenn du möchtest, synchronisiert Nifuda über deine private iCloud zwischen deinen Geräten." },
+    { q: "Was kostet Nifuda?", a: "Der Download ist kostenlos. Nifuda Pro schaltet alle Funktionen per Einmalkauf frei, ohne Abo." },
+    { q: "Kann ich meinen Bestand exportieren?", a: "Ja, als PDF-Bericht mit Werten, Mengen und Lagerplätzen, zum Beispiel für deine Hausratversicherung." },
+    { q: "Auf welchen Geräten läuft Nifuda?", a: "Auf iPhone und iPad. Ein Kauf von Pro gilt für alle Geräte mit derselben Apple-ID." }
+  ],
+  cta_h: "Bring Ordnung in deinen Haushalt.", cta_b: "Lade Nifuda und erfasse deinen ersten Artikel in unter einer Minute.",
+  foot_tag: "Inventar für dein Zuhause. Lokal oder per iCloud, privat und ohne Account.", foot_legal: "Rechtliches", foot_support: "Support", foot_lang: "Sprache",
+  foot_apple: "Apple, das Apple-Logo, iPhone, iPad und iCloud sind Marken der Apple Inc., eingetragen in den USA und weiteren Ländern. App Store ist eine Dienstleistungsmarke der Apple Inc.",
+  back: "Zur Startseite",
+  pp_title: "Datenschutz", pp_meta: "Stand: Oktober 2026",
+  pp: [
+    { h: "Kurz gesagt", b: "Nifuda erhebt keine personenbezogenen Daten. Es gibt keinen Account, kein Tracking und keinen eigenen Server." },
+    { h: "Daten in der App", b: "Alle Artikel, Fotos, Tags und Einstellungen werden ausschließlich auf deinem Gerät gespeichert. Wir haben darauf keinen Zugriff." },
+    { h: "iCloud-Synchronisation", b: "Wenn du die Synchronisation aktivierst, speichert Apple deine Daten in deiner privaten iCloud-Datenbank. Dafür gelten die Datenschutzbestimmungen von Apple. Wir können diese Daten nicht einsehen." },
+    { h: "Kamera und Fotos", b: "Der Kamerazugriff dient nur dem Scannen von Barcodes und dem Fotografieren von Artikeln. Bilder verlassen dein Gerät nicht, außer über deine eigene iCloud." },
+    { h: "Käufe", b: "Käufe werden vollständig über den App Store von Apple abgewickelt. Wir erhalten keine Zahlungsdaten." },
+    { h: "Diese Website", b: "Die Website wird über GitHub Pages bereitgestellt. GitHub kann dabei technisch notwendige Daten wie deine IP-Adresse verarbeiten. Wir setzen keine Cookies und keine Analyse-Tools ein." },
+    { h: "Kontakt", b: "Fragen zum Datenschutz beantworten wir gern per E-Mail an " + EMAIL + "." }
+  ],
+  im_title: "Impressum", im_meta: "Angaben gemäß § 5 DDG",
+  im: [{"h":"Anbieter","b":"Dennis Bortmes\nWestendstraße 2\n83301 Traunreut\nDeutschland"},{"h":"Kontakt","b":"Tel.: +49 175 7196767\nE-Mail: contact.bortmes@icloud.com"},{"h":"Umsatzsteuer","b":"Kleinunternehmer gemäß § 19 UStG – es wird keine Umsatzsteuer ausgewiesen."},{"h":"Verbraucherstreitbeilegung","b":"Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."},{"h":"Zentrale Kontaktstelle nach dem Digital Services Act – DSA (Verordnung (EU) 2022/2065)","b":"Unsere zentrale Kontaktstelle für Nutzer und Behörden nach Art. 11, 12 DSA erreichen Sie wie folgt:\nE-Mail: contact.bortmes@icloud.com\nDie für den Kontakt zur Verfügung stehenden Sprachen sind: Deutsch, Englisch."}]
+},
+en: {
+  nav_features: "Features", nav_privacy: "Privacy", nav_faq: "FAQ",
+  hero_kicker: "Inventory app for iPhone & iPad",
+  hero_h: "Everything you own. In one place.",
+  hero_sub: "Nifuda keeps track of groceries, gadgets, tools and collections with location, quantity and value. Stored on your device, synced via iCloud if you like, no account needed.",
+  hero_note: "Free to download\nPro as a one-time purchase",
+  facts: ["No account", "Local & iCloud", "Barcode scanner", "iPhone & iPad"],
+  tag_place: "Desk", alt_home: "Nifuda home screen",
+  feat_k: "Features", feat_h: "Built for your home, not a warehouse.",
+  feats: [
+    { k: "Capture", h: "Add an item in seconds.", b: "Scan a barcode or type a name. Add quantity, price and location; batches keep track of purchase and expiry dates." },
+    { k: "Tags", h: "Organised your way.", b: "Create your own tags and tag groups, by category or status. Lists bring together what belongs together." },
+    { k: "Alerts", h: "Reminded in time.", b: "Nifuda shows what expires soon and what drops below your minimum stock, so you know what's missing before you shop." },
+    { k: "Statistics", h: "Know what it's worth.", b: "Total value, value by location and what was used this month. Useful for insurance, moving house or simply staying on top of things." }
+  ],
+  ipad_k: "iPad", ipad_h: "More room for your inventory.", ipad_b: "On iPad you see your entire inventory at a glance. With iCloud, iPhone and iPad stay in sync automatically.",
+  priv_k: "Privacy", priv_h: "Your data stays with you.",
+  priv_pts: [
+    { h: "No account", b: "No sign-up, no email address, no password. Open the app and start." },
+    { h: "No tracking", b: "Nifuda contains no analytics or advertising tools. We can't see what you add." },
+    { h: "Your iCloud", b: "Data is stored on your device and, optionally, in your private iCloud. There is no Nifuda server." }
+  ],
+  faq_k: "FAQ", faq_h: "Frequently asked questions", faq_more: "Anything else? Write to us:",
+  faqs: [
+    { q: "Do I need an account?", a: "No. Nifuda works without sign-up. Your data lives on your device." },
+    { q: "Where is my data stored?", a: "Locally on your iPhone or iPad. If you like, Nifuda syncs between your devices through your private iCloud." },
+    { q: "How much does Nifuda cost?", a: "The download is free. Nifuda Pro unlocks every feature with a one-time purchase, no subscription." },
+    { q: "Can I export my inventory?", a: "Yes, as a PDF report with values, quantities and locations, for example for your home insurance." },
+    { q: "Which devices does Nifuda run on?", a: "iPhone and iPad. A Pro purchase applies to all devices using the same Apple ID." }
+  ],
+  cta_h: "Bring order to your home.", cta_b: "Download Nifuda and add your first item in under a minute.",
+  foot_tag: "Inventory for your home. Local or via iCloud, private and account-free.", foot_legal: "Legal", foot_support: "Support", foot_lang: "Language",
+  foot_apple: "Apple, the Apple logo, iPhone, iPad and iCloud are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.",
+  back: "Back to home",
+  pp_title: "Privacy Policy", pp_meta: "Last updated: October 2026",
+  pp: [
+    { h: "In short", b: "Nifuda does not collect personal data. There is no account, no tracking and no server of our own." },
+    { h: "Data in the app", b: "All items, photos, tags and settings are stored only on your device. We have no access to them." },
+    { h: "iCloud sync", b: "If you turn on sync, Apple stores your data in your private iCloud database, governed by Apple's privacy policy. We cannot view this data." },
+    { h: "Camera and photos", b: "Camera access is used only to scan barcodes and photograph items. Images never leave your device except through your own iCloud." },
+    { h: "Purchases", b: "Purchases are handled entirely by Apple's App Store. We receive no payment details." },
+    { h: "This website", b: "This website is served via GitHub Pages. GitHub may process technically necessary data such as your IP address. We use no cookies and no analytics." },
+    { h: "Contact", b: "For privacy questions, email us at " + EMAIL + "." }
+  ],
+  im_title: "Imprint", im_meta: "Information according to § 5 DDG (Germany)",
+  im: [{"h":"Provider","b":"Dennis Bortmes\nWestendstraße 2\n83301 Traunreut\nGermany"},{"h":"Contact","b":"Tel.: +49 175 7196767\nEmail: contact.bortmes@icloud.com"},{"h":"Value added tax","b":"Small business under § 19 of the German VAT Act (UStG) – no VAT is shown."},{"h":"Consumer dispute resolution","b":"We are neither obliged nor willing to participate in dispute resolution proceedings before a consumer arbitration board."},{"h":"Single point of contact under the Digital Services Act – DSA (Regulation (EU) 2022/2065)","b":"Our single point of contact for users and authorities under Art. 11, 12 DSA can be reached as follows:\nEmail: contact.bortmes@icloud.com\nLanguages available for communication: German, English."},{"h":"Note","b":"This is a courtesy translation. The German version is the legally binding one."}]
+},
+es: {
+  nav_features: "Funciones", nav_privacy: "Privacidad", nav_faq: "FAQ",
+  hero_kicker: "App de inventario para iPhone y iPad",
+  hero_h: "Todo lo que tienes. En un solo lugar.",
+  hero_sub: "Nifuda registra despensa, tecnología, herramientas y colecciones con ubicación, cantidad y valor. Guardado en tu dispositivo, sincronizado por iCloud si quieres y sin cuenta.",
+  hero_note: "Descarga gratuita\nPro con pago único",
+  facts: ["Sin cuenta", "Local e iCloud", "Escáner de códigos", "iPhone y iPad"],
+  tag_place: "Escritorio", alt_home: "Pantalla de inicio de Nifuda",
+  feat_k: "Funciones", feat_h: "Pensado para tu casa, no para un almacén.",
+  feats: [
+    { k: "Registrar", h: "Un artículo en segundos.", b: "Escanea un código de barras o escribe el nombre. Añade cantidad, precio y ubicación; los lotes guardan la fecha de compra y de caducidad." },
+    { k: "Etiquetas", h: "Ordenado a tu manera.", b: "Crea tus propias etiquetas y grupos, por categoría o estado. Las listas reúnen lo que va junto." },
+    { k: "Avisos", h: "Avisado a tiempo.", b: "Nifuda muestra lo que caduca pronto y lo que baja del stock mínimo, para que sepas qué falta antes de ir a comprar." },
+    { k: "Estadísticas", h: "Conoce su valor.", b: "Valor total, valor por ubicación y lo consumido este mes. Útil para el seguro, una mudanza o simplemente para tener una visión general." }
+  ],
+  ipad_k: "iPad", ipad_h: "Más espacio para tu inventario.", ipad_b: "En el iPad ves todo tu inventario de un vistazo. Con iCloud, iPhone y iPad se sincronizan automáticamente.",
+  priv_k: "Privacidad", priv_h: "Tus datos se quedan contigo.",
+  priv_pts: [
+    { h: "Sin cuenta", b: "Sin registro, sin correo electrónico, sin contraseña. Abre la app y empieza." },
+    { h: "Sin seguimiento", b: "Nifuda no incluye herramientas de análisis ni de publicidad. No vemos lo que registras." },
+    { h: "Tu iCloud", b: "Los datos se guardan en tu dispositivo y, si quieres, en tu iCloud privado. No existe ningún servidor de Nifuda." }
+  ],
+  faq_k: "FAQ", faq_h: "Preguntas frecuentes", faq_more: "¿Algo más? Escríbenos:",
+  faqs: [
+    { q: "¿Necesito una cuenta?", a: "No. Nifuda funciona sin registro. Tus datos están en tu dispositivo." },
+    { q: "¿Dónde se guardan mis datos?", a: "En local, en tu iPhone o iPad. Si quieres, Nifuda sincroniza tus dispositivos a través de tu iCloud privado." },
+    { q: "¿Cuánto cuesta Nifuda?", a: "La descarga es gratuita. Nifuda Pro desbloquea todas las funciones con un pago único, sin suscripción." },
+    { q: "¿Puedo exportar mi inventario?", a: "Sí, como informe PDF con valores, cantidades y ubicaciones, por ejemplo para el seguro del hogar." },
+    { q: "¿En qué dispositivos funciona Nifuda?", a: "En iPhone y iPad. La compra de Pro sirve para todos los dispositivos con el mismo Apple ID." }
+  ],
+  cta_h: "Pon orden en tu casa.", cta_b: "Descarga Nifuda y registra tu primer artículo en menos de un minuto.",
+  foot_tag: "Inventario para tu hogar. Local o en iCloud, privado y sin cuenta.", foot_legal: "Legal", foot_support: "Soporte", foot_lang: "Idioma",
+  foot_apple: "Apple, el logotipo de Apple, iPhone, iPad e iCloud son marcas comerciales de Apple Inc., registradas en EE. UU. y en otros países. App Store es una marca de servicio de Apple Inc.",
+  back: "Volver al inicio",
+  pp_title: "Privacidad", pp_meta: "Última actualización: octubre de 2026",
+  pp: [
+    { h: "En resumen", b: "Nifuda no recopila datos personales. No hay cuenta, ni seguimiento, ni servidor propio." },
+    { h: "Datos en la app", b: "Todos los artículos, fotos, etiquetas y ajustes se guardan solo en tu dispositivo. No tenemos acceso a ellos." },
+    { h: "Sincronización con iCloud", b: "Si activas la sincronización, Apple guarda tus datos en tu base de datos privada de iCloud, sujeta a la política de privacidad de Apple. No podemos ver estos datos." },
+    { h: "Cámara y fotos", b: "La cámara solo se usa para escanear códigos de barras y fotografiar artículos. Las imágenes no salen de tu dispositivo salvo a través de tu propio iCloud." },
+    { h: "Compras", b: "Las compras se gestionan íntegramente a través del App Store de Apple. No recibimos datos de pago." },
+    { h: "Este sitio web", b: "Este sitio se aloja en GitHub Pages. GitHub puede tratar datos técnicamente necesarios, como tu dirección IP. No usamos cookies ni herramientas de análisis." },
+    { h: "Contacto", b: "Para dudas sobre privacidad, escríbenos a " + EMAIL + "." }
+  ],
+  im_title: "Aviso legal", im_meta: "Información según el § 5 DDG (Alemania)",
+  im: [{"h":"Responsable","b":"Dennis Bortmes\nWestendstraße 2\n83301 Traunreut\nAlemania"},{"h":"Contacto","b":"Tel.: +49 175 7196767\nCorreo: contact.bortmes@icloud.com"},{"h":"Value added tax","b":"Small business under § 19 of the German VAT Act (UStG) – no VAT is shown."},{"h":"Consumer dispute resolution","b":"We are neither obliged nor willing to participate in dispute resolution proceedings before a consumer arbitration board."},{"h":"Single point of contact under the Digital Services Act – DSA (Regulation (EU) 2022/2065)","b":"Our single point of contact for users and authorities under Art. 11, 12 DSA can be reached as follows:\nEmail: contact.bortmes@icloud.com\nLanguages available for communication: German, English."},{"h":"Note","b":"This is a courtesy translation. The German version is the legally binding one."}]
+},
+fr: {
+  nav_features: "Fonctions", nav_privacy: "Confidentialité", nav_faq: "FAQ",
+  hero_kicker: "App d’inventaire pour iPhone et iPad",
+  hero_h: "Tout ce que vous possédez. Au même endroit.",
+  hero_sub: "Nifuda répertorie provisions, appareils, outils et collections avec emplacement, quantité et valeur. Stocké sur votre appareil, synchronisé via iCloud si vous le souhaitez, sans compte.",
+  hero_note: "Téléchargement gratuit\nPro en achat unique",
+  facts: ["Sans compte", "Local et iCloud", "Scanner de codes-barres", "iPhone et iPad"],
+  tag_place: "Bureau", alt_home: "Écran d’accueil de Nifuda",
+  feat_k: "Fonctions", feat_h: "Conçu pour la maison, pas pour un entrepôt.",
+  feats: [
+    { k: "Saisir", h: "Un article en quelques secondes.", b: "Scannez un code-barres ou tapez un nom. Ajoutez quantité, prix et emplacement ; les lots gardent la date d’achat et la date de péremption." },
+    { k: "Tags", h: "Rangé selon votre logique.", b: "Créez vos propres tags et groupes de tags, par catégorie ou par statut. Les listes regroupent ce qui va ensemble." },
+    { k: "Alertes", h: "Prévenu à temps.", b: "Nifuda indique ce qui périme bientôt et ce qui passe sous le stock minimum, pour savoir ce qui manque avant les courses." },
+    { k: "Statistiques", h: "Connaître sa valeur.", b: "Valeur totale, valeur par emplacement et consommation du mois. Pratique pour l’assurance, un déménagement ou simplement pour garder une vue d’ensemble." }
+  ],
+  ipad_k: "iPad", ipad_h: "Plus de place pour votre inventaire.", ipad_b: "Sur iPad, vous voyez tout votre inventaire d’un coup d’œil. Avec iCloud, iPhone et iPad restent synchronisés automatiquement.",
+  priv_k: "Confidentialité", priv_h: "Vos données restent chez vous.",
+  priv_pts: [
+    { h: "Sans compte", b: "Pas d’inscription, pas d’adresse e-mail, pas de mot de passe. Ouvrez l’app et commencez." },
+    { h: "Sans pistage", b: "Nifuda ne contient aucun outil d’analyse ni de publicité. Nous ne voyons pas ce que vous saisissez." },
+    { h: "Votre iCloud", b: "Les données sont stockées sur votre appareil et, si vous le souhaitez, dans votre iCloud privé. Il n’existe aucun serveur Nifuda." }
+  ],
+  faq_k: "FAQ", faq_h: "Questions fréquentes", faq_more: "Une autre question ? Écrivez-nous :",
+  faqs: [
+    { q: "Ai-je besoin d’un compte ?", a: "Non. Nifuda fonctionne sans inscription. Vos données restent sur votre appareil." },
+    { q: "Où sont stockées mes données ?", a: "En local sur votre iPhone ou iPad. Si vous le souhaitez, Nifuda synchronise vos appareils via votre iCloud privé." },
+    { q: "Combien coûte Nifuda ?", a: "Le téléchargement est gratuit. Nifuda Pro débloque toutes les fonctions en achat unique, sans abonnement." },
+    { q: "Puis-je exporter mon inventaire ?", a: "Oui, sous forme de rapport PDF avec valeurs, quantités et emplacements, par exemple pour votre assurance habitation." },
+    { q: "Sur quels appareils fonctionne Nifuda ?", a: "Sur iPhone et iPad. L’achat de Pro vaut pour tous les appareils associés au même identifiant Apple." }
+  ],
+  cta_h: "Mettez de l’ordre chez vous.", cta_b: "Téléchargez Nifuda et saisissez votre premier article en moins d’une minute.",
+  foot_tag: "L’inventaire de votre maison. Local ou via iCloud, privé et sans compte.", foot_legal: "Mentions", foot_support: "Assistance", foot_lang: "Langue",
+  foot_apple: "Apple, le logo Apple, iPhone, iPad et iCloud sont des marques d’Apple Inc., déposées aux États-Unis et dans d’autres pays. App Store est une marque de service d’Apple Inc.",
+  back: "Retour à l’accueil",
+  pp_title: "Confidentialité", pp_meta: "Dernière mise à jour : octobre 2026",
+  pp: [
+    { h: "En bref", b: "Nifuda ne collecte aucune donnée personnelle. Pas de compte, pas de pistage, pas de serveur propre." },
+    { h: "Données dans l’app", b: "Articles, photos, tags et réglages sont stockés uniquement sur votre appareil. Nous n’y avons pas accès." },
+    { h: "Synchronisation iCloud", b: "Si vous activez la synchronisation, Apple stocke vos données dans votre base iCloud privée, soumise à la politique de confidentialité d’Apple. Nous ne pouvons pas consulter ces données." },
+    { h: "Appareil photo et photos", b: "L’appareil photo sert uniquement à scanner des codes-barres et à photographier des articles. Les images ne quittent votre appareil que via votre propre iCloud." },
+    { h: "Achats", b: "Les achats sont entièrement gérés par l’App Store d’Apple. Nous ne recevons aucune donnée de paiement." },
+    { h: "Ce site web", b: "Ce site est hébergé sur GitHub Pages. GitHub peut traiter des données techniquement nécessaires, comme votre adresse IP. Nous n’utilisons ni cookies ni outils d’analyse." },
+    { h: "Contact", b: "Pour toute question sur la confidentialité, écrivez à " + EMAIL + "." }
+  ],
+  im_title: "Mentions légales", im_meta: "Informations selon le § 5 DDG (Allemagne)",
+  im: [{"h":"Éditeur","b":"Dennis Bortmes\nWestendstraße 2\n83301 Traunreut\nAllemagne"},{"h":"Contact","b":"Tel.: +49 175 7196767\nE-mail : contact.bortmes@icloud.com"},{"h":"Value added tax","b":"Small business under § 19 of the German VAT Act (UStG) – no VAT is shown."},{"h":"Consumer dispute resolution","b":"We are neither obliged nor willing to participate in dispute resolution proceedings before a consumer arbitration board."},{"h":"Single point of contact under the Digital Services Act – DSA (Regulation (EU) 2022/2065)","b":"Our single point of contact for users and authorities under Art. 11, 12 DSA can be reached as follows:\nEmail: contact.bortmes@icloud.com\nLanguages available for communication: German, English."},{"h":"Note","b":"This is a courtesy translation. The German version is the legally binding one."}]
+},
+it: {
+  nav_features: "Funzioni", nav_privacy: "Privacy", nav_faq: "FAQ",
+  hero_kicker: "App di inventario per iPhone e iPad",
+  hero_h: "Tutto ciò che possiedi. In un unico posto.",
+  hero_sub: "Nifuda registra dispensa, tecnologia, attrezzi e collezioni con posizione, quantità e valore. Salvato sul dispositivo, sincronizzato con iCloud se vuoi, senza account.",
+  hero_note: "Download gratuito\nPro con acquisto unico",
+  facts: ["Nessun account", "Locale e iCloud", "Scanner di codici a barre", "iPhone e iPad"],
+  tag_place: "Scrivania", alt_home: "Schermata iniziale di Nifuda",
+  feat_k: "Funzioni", feat_h: "Pensato per la casa, non per un magazzino.",
+  feats: [
+    { k: "Registra", h: "Un articolo in pochi secondi.", b: "Scansiona un codice a barre o scrivi il nome. Aggiungi quantità, prezzo e posizione; i lotti tengono traccia della data di acquisto e di scadenza." },
+    { k: "Tag", h: "In ordine a modo tuo.", b: "Crea tag e gruppi di tag personali, per categoria o stato. Le liste riuniscono ciò che va insieme." },
+    { k: "Avvisi", h: "Avvisato in tempo.", b: "Nifuda mostra cosa scade a breve e cosa scende sotto la scorta minima, così sai cosa manca prima di fare la spesa." },
+    { k: "Statistiche", h: "Conosci il valore.", b: "Valore totale, valore per posizione e consumi del mese. Utile per l’assicurazione, un trasloco o semplicemente per avere una panoramica." }
+  ],
+  ipad_k: "iPad", ipad_h: "Più spazio per il tuo inventario.", ipad_b: "Su iPad vedi tutto il tuo inventario a colpo d’occhio. Con iCloud, iPhone e iPad restano sincronizzati automaticamente.",
+  priv_k: "Privacy", priv_h: "I tuoi dati restano con te.",
+  priv_pts: [
+    { h: "Nessun account", b: "Nessuna registrazione, nessuna e-mail, nessuna password. Apri l’app e inizia." },
+    { h: "Nessun tracciamento", b: "Nifuda non contiene strumenti di analisi o pubblicità. Non vediamo cosa registri." },
+    { h: "Il tuo iCloud", b: "I dati sono salvati sul tuo dispositivo e, se vuoi, nel tuo iCloud privato. Non esiste alcun server Nifuda." }
+  ],
+  faq_k: "FAQ", faq_h: "Domande frequenti", faq_more: "Altre domande? Scrivici:",
+  faqs: [
+    { q: "Serve un account?", a: "No. Nifuda funziona senza registrazione. I tuoi dati restano sul dispositivo." },
+    { q: "Dove vengono salvati i miei dati?", a: "In locale sul tuo iPhone o iPad. Se vuoi, Nifuda sincronizza i dispositivi tramite il tuo iCloud privato." },
+    { q: "Quanto costa Nifuda?", a: "Il download è gratuito. Nifuda Pro sblocca tutte le funzioni con un acquisto unico, senza abbonamento." },
+    { q: "Posso esportare il mio inventario?", a: "Sì, come report PDF con valori, quantità e posizioni, ad esempio per l’assicurazione della casa." },
+    { q: "Su quali dispositivi funziona Nifuda?", a: "Su iPhone e iPad. L’acquisto di Pro vale per tutti i dispositivi con lo stesso ID Apple." }
+  ],
+  cta_h: "Metti ordine in casa.", cta_b: "Scarica Nifuda e registra il tuo primo articolo in meno di un minuto.",
+  foot_tag: "L’inventario per la tua casa. Locale o su iCloud, privato e senza account.", foot_legal: "Note legali", foot_support: "Supporto", foot_lang: "Lingua",
+  foot_apple: "Apple, il logo Apple, iPhone, iPad e iCloud sono marchi di Apple Inc., registrati negli Stati Uniti e in altri Paesi. App Store è un marchio di servizio di Apple Inc.",
+  back: "Torna alla home",
+  pp_title: "Privacy", pp_meta: "Ultimo aggiornamento: ottobre 2026",
+  pp: [
+    { h: "In breve", b: "Nifuda non raccoglie dati personali. Nessun account, nessun tracciamento, nessun server proprio." },
+    { h: "Dati nell’app", b: "Articoli, foto, tag e impostazioni sono salvati solo sul tuo dispositivo. Non vi abbiamo accesso." },
+    { h: "Sincronizzazione iCloud", b: "Se attivi la sincronizzazione, Apple salva i tuoi dati nel tuo database iCloud privato, secondo l’informativa privacy di Apple. Non possiamo vedere questi dati." },
+    { h: "Fotocamera e foto", b: "La fotocamera serve solo a scansionare codici a barre e fotografare articoli. Le immagini lasciano il dispositivo solo tramite il tuo iCloud." },
+    { h: "Acquisti", b: "Gli acquisti sono gestiti interamente dall’App Store di Apple. Non riceviamo dati di pagamento." },
+    { h: "Questo sito", b: "Il sito è pubblicato tramite GitHub Pages. GitHub può trattare dati tecnicamente necessari come il tuo indirizzo IP. Non usiamo cookie né strumenti di analisi." },
+    { h: "Contatto", b: "Per domande sulla privacy scrivi a " + EMAIL + "." }
+  ],
+  im_title: "Note legali", im_meta: "Informazioni ai sensi del § 5 DDG (Germania)",
+  im: [{"h":"Titolare","b":"Dennis Bortmes\nWestendstraße 2\n83301 Traunreut\nGermania"},{"h":"Contatto","b":"Tel.: +49 175 7196767\nE-mail: contact.bortmes@icloud.com"},{"h":"Value added tax","b":"Small business under § 19 of the German VAT Act (UStG) – no VAT is shown."},{"h":"Consumer dispute resolution","b":"We are neither obliged nor willing to participate in dispute resolution proceedings before a consumer arbitration board."},{"h":"Single point of contact under the Digital Services Act – DSA (Regulation (EU) 2022/2065)","b":"Our single point of contact for users and authorities under Art. 11, 12 DSA can be reached as follows:\nEmail: contact.bortmes@icloud.com\nLanguages available for communication: German, English."},{"h":"Note","b":"This is a courtesy translation. The German version is the legally binding one."}]
+},
+ja: {
+  nav_features: "機能", nav_privacy: "プライバシー", nav_faq: "よくある質問",
+  hero_kicker: "iPhone・iPad 向け在庫管理アプリ",
+  hero_h: "持ち物のすべてを、ひとつの場所に。",
+  hero_sub: "Nifuda は食品のストック、家電、工具、コレクションを保管場所・数量・金額とともに記録します。データは端末に保存され、必要に応じて iCloud で同期。アカウントは不要です。",
+  hero_note: "無料でダウンロード\nPro は買い切り",
+  facts: ["アカウント不要", "ローカル & iCloud", "バーコードスキャン", "iPhone & iPad"],
+  tag_place: "デスク", alt_home: "Nifuda のホーム画面",
+  feat_k: "機能", feat_h: "倉庫ではなく、暮らしのために。",
+  feats: [
+    { k: "登録", h: "数秒でアイテムを登録。", b: "バーコードをスキャンするか名前を入力。数量・価格・保管場所を追加でき、ロットごとに購入日と賞味期限を管理できます。" },
+    { k: "タグ", h: "自分のルールで整理。", b: "カテゴリやステータスなど、タグとタググループを自由に作成。リストで関連するものをまとめられます。" },
+    { k: "通知", h: "期限前にお知らせ。", b: "期限が近いものや最低在庫を下回ったものを表示。買い物の前に足りないものがわかります。" },
+    { k: "統計", h: "資産価値をひと目で。", b: "総額、保管場所ごとの金額、今月の消費額を確認できます。保険や引っ越し、日々の把握に役立ちます。" }
+  ],
+  ipad_k: "iPad", ipad_h: "大きな画面で在庫を一覧。", ipad_b: "iPad ならすべての在庫をひと目で確認できます。iCloud で iPhone と iPad は自動的に同期されます。",
+  priv_k: "プライバシー", priv_h: "あなたのデータは、あなたのもの。",
+  priv_pts: [
+    { h: "アカウント不要", b: "登録もメールアドレスもパスワードも不要。アプリを開いてすぐに使えます。" },
+    { h: "トラッキングなし", b: "分析ツールや広告ツールは一切含まれていません。登録内容を私たちが見ることはありません。" },
+    { h: "あなたの iCloud", b: "データは端末と、必要に応じてあなたのプライベート iCloud に保存されます。Nifuda のサーバーは存在しません。" }
+  ],
+  faq_k: "よくある質問", faq_h: "よくある質問", faq_more: "その他のご質問はこちら：",
+  faqs: [
+    { q: "アカウントは必要ですか？", a: "いいえ。登録なしで使えます。データは端末に保存されます。" },
+    { q: "データはどこに保存されますか？", a: "iPhone または iPad 本体に保存されます。必要に応じて、プライベート iCloud を通じてデバイス間で同期できます。" },
+    { q: "料金はいくらですか？", a: "ダウンロードは無料です。Nifuda Pro は買い切りですべての機能が使えます。サブスクリプションはありません。" },
+    { q: "在庫をエクスポートできますか？", a: "はい。金額・数量・保管場所を含む PDF レポートとして書き出せます。保険の手続きなどに便利です。" },
+    { q: "対応デバイスは？", a: "iPhone と iPad です。Pro の購入は同じ Apple Account のすべてのデバイスで有効です。" }
+  ],
+  cta_h: "暮らしに、整理整頓を。", cta_b: "Nifuda をダウンロードして、最初のアイテムを1分以内に登録しましょう。",
+  foot_tag: "暮らしのための在庫管理。ローカルまたは iCloud、プライベート、アカウント不要。", foot_legal: "法的情報", foot_support: "サポート", foot_lang: "言語",
+  foot_apple: "Apple、Apple のロゴ、iPhone、iPad、iCloud は、米国およびその他の国で登録された Apple Inc. の商標です。App Store は Apple Inc. のサービスマークです。",
+  back: "ホームに戻る",
+  pp_title: "プライバシーポリシー", pp_meta: "最終更新：2026年10月",
+  pp: [
+    { h: "概要", b: "Nifuda は個人データを収集しません。アカウント、トラッキング、独自サーバーはありません。" },
+    { h: "アプリ内のデータ", b: "アイテム、写真、タグ、設定はすべて端末内にのみ保存されます。私たちはアクセスできません。" },
+    { h: "iCloud 同期", b: "同期を有効にすると、Apple があなたのプライベート iCloud データベースにデータを保存します。Apple のプライバシーポリシーが適用され、私たちはこのデータを閲覧できません。" },
+    { h: "カメラと写真", b: "カメラはバーコードのスキャンとアイテムの撮影にのみ使用します。画像はご自身の iCloud を除き、端末の外に出ることはありません。" },
+    { h: "購入", b: "購入はすべて Apple の App Store で処理されます。支払い情報を受け取ることはありません。" },
+    { h: "このウェブサイト", b: "本サイトは GitHub Pages で配信されています。GitHub は IP アドレスなど技術的に必要なデータを処理する場合があります。Cookie や分析ツールは使用していません。" },
+    { h: "お問い合わせ", b: "プライバシーに関するご質問は " + EMAIL + " までご連絡ください。" }
+  ],
+  im_title: "運営者情報", im_meta: "ドイツ DDG 第5条に基づく表示",
+  im: [{"h":"運営者","b":"Dennis Bortmes\nWestendstraße 2\n83301 Traunreut\nドイツ"},{"h":"連絡先","b":"Tel.: +49 175 7196767\nメール：contact.bortmes@icloud.com"},{"h":"Value added tax","b":"Small business under § 19 of the German VAT Act (UStG) – no VAT is shown."},{"h":"Consumer dispute resolution","b":"We are neither obliged nor willing to participate in dispute resolution proceedings before a consumer arbitration board."},{"h":"Single point of contact under the Digital Services Act – DSA (Regulation (EU) 2022/2065)","b":"Our single point of contact for users and authorities under Art. 11, 12 DSA can be reached as follows:\nEmail: contact.bortmes@icloud.com\nLanguages available for communication: German, English."},{"h":"Note","b":"This is a courtesy translation. The German version is the legally binding one."}]
+},
+zh: {
+  nav_features: "功能", nav_privacy: "隐私", nav_faq: "常见问题",
+  hero_kicker: "适用于 iPhone 和 iPad 的物品管理 App",
+  hero_h: "你拥有的一切，尽在一处。",
+  hero_sub: "Nifuda 记录食品储备、数码产品、工具和收藏，包含存放位置、数量和价值。数据保存在设备上，可选 iCloud 同步，无需账户。",
+  hero_note: "免费下载\nPro 一次性购买",
+  facts: ["无需账户", "本地与 iCloud", "条形码扫描", "iPhone 和 iPad"],
+  tag_place: "书桌", alt_home: "Nifuda 主屏幕",
+  feat_k: "功能", feat_h: "为家庭而生，而非仓库。",
+  feats: [
+    { k: "录入", h: "几秒钟录入一件物品。", b: "扫描条形码或输入名称，添加数量、价格和存放位置。批次会记录购买日期和保质期。" },
+    { k: "标签", h: "按你的方式整理。", b: "按类别或状态创建自己的标签和标签组。列表把相关的物品汇集在一起。" },
+    { k: "提醒", h: "及时提醒。", b: "Nifuda 会显示即将过期和低于最低库存的物品，购物前就知道缺什么。" },
+    { k: "统计", h: "价值一目了然。", b: "总价值、各存放位置的价值以及本月消耗。适用于保险、搬家，或只是掌握全局。" }
+  ],
+  ipad_k: "iPad", ipad_h: "更大的空间，查看全部物品。", ipad_b: "在 iPad 上一眼看到全部物品。通过 iCloud，iPhone 和 iPad 自动保持同步。",
+  priv_k: "隐私", priv_h: "你的数据只属于你。",
+  priv_pts: [
+    { h: "无需账户", b: "无需注册、电子邮件或密码。打开 App 即可开始。" },
+    { h: "无追踪", b: "Nifuda 不包含任何分析或广告工具。我们看不到你录入的内容。" },
+    { h: "你的 iCloud", b: "数据保存在你的设备上，也可选择保存在你的私人 iCloud 中。Nifuda 没有服务器。" }
+  ],
+  faq_k: "常见问题", faq_h: "常见问题", faq_more: "还有其他问题？请联系我们：",
+  faqs: [
+    { q: "需要账户吗？", a: "不需要。Nifuda 无需注册即可使用，数据保存在你的设备上。" },
+    { q: "我的数据保存在哪里？", a: "保存在你的 iPhone 或 iPad 本地。如有需要，Nifuda 可通过你的私人 iCloud 在设备间同步。" },
+    { q: "Nifuda 收费吗？", a: "免费下载。Nifuda Pro 一次性购买即可解锁全部功能，无需订阅。" },
+    { q: "可以导出物品清单吗？", a: "可以，导出为包含价值、数量和存放位置的 PDF 报告，例如用于家庭财产保险。" },
+    { q: "支持哪些设备？", a: "iPhone 和 iPad。购买 Pro 后，使用同一 Apple 账户的所有设备均可使用。" }
+  ],
+  cta_h: "让家井井有条。", cta_b: "下载 Nifuda，一分钟内录入第一件物品。",
+  foot_tag: "家庭物品管理。本地或 iCloud、私密、无需账户。", foot_legal: "法律信息", foot_support: "支持", foot_lang: "语言",
+  foot_apple: "Apple、Apple 标志、iPhone、iPad 和 iCloud 是 Apple Inc. 在美国及其他国家和地区注册的商标。App Store 是 Apple Inc. 的服务商标。",
+  back: "返回首页",
+  pp_title: "隐私政策", pp_meta: "最后更新：2026 年 10 月",
+  pp: [
+    { h: "简要说明", b: "Nifuda 不收集任何个人数据。没有账户、没有追踪，也没有自有服务器。" },
+    { h: "App 中的数据", b: "所有物品、照片、标签和设置仅保存在你的设备上。我们无法访问。" },
+    { h: "iCloud 同步", b: "开启同步后，Apple 会将你的数据保存在你的私人 iCloud 数据库中，适用 Apple 的隐私政策。我们无法查看这些数据。" },
+    { h: "相机与照片", b: "相机仅用于扫描条形码和拍摄物品。除通过你自己的 iCloud 外，图片不会离开你的设备。" },
+    { h: "购买", b: "所有购买均由 Apple App Store 处理。我们不会收到任何付款信息。" },
+    { h: "本网站", b: "本网站通过 GitHub Pages 提供。GitHub 可能会处理技术上必需的数据，例如你的 IP 地址。我们不使用 Cookie 或分析工具。" },
+    { h: "联系方式", b: "如有隐私相关问题，请发送邮件至 " + EMAIL + "。" }
+  ],
+  im_title: "法律声明", im_meta: "依据德国 DDG 第 5 条提供的信息",
+  im: [{"h":"提供者","b":"Dennis Bortmes\nWestendstraße 2\n83301 Traunreut\n德国"},{"h":"联系方式","b":"Tel.: +49 175 7196767\n电子邮件：contact.bortmes@icloud.com"},{"h":"Value added tax","b":"Small business under § 19 of the German VAT Act (UStG) – no VAT is shown."},{"h":"Consumer dispute resolution","b":"We are neither obliged nor willing to participate in dispute resolution proceedings before a consumer arbitration board."},{"h":"Single point of contact under the Digital Services Act – DSA (Regulation (EU) 2022/2065)","b":"Our single point of contact for users and authorities under Art. 11, 12 DSA can be reached as follows:\nEmail: contact.bortmes@icloud.com\nLanguages available for communication: German, English."},{"h":"Note","b":"This is a courtesy translation. The German version is the legally binding one."}]
+},
+"zh-hant": {
+  nav_features: "功能", nav_privacy: "隱私", nav_faq: "常見問題",
+  hero_kicker: "適用於 iPhone 和 iPad 的物品管理 App",
+  hero_h: "你擁有的一切，盡在一處。",
+  hero_sub: "Nifuda 記錄食品存貨、3C 產品、工具和收藏，包含存放位置、數量和價值。資料儲存在裝置上，可選 iCloud 同步，無需帳號。",
+  hero_note: "免費下載\nPro 一次性購買",
+  facts: ["無需帳號", "本機與 iCloud", "條碼掃描", "iPhone 和 iPad"],
+  tag_place: "書桌", alt_home: "Nifuda 主畫面",
+  feat_k: "功能", feat_h: "為家庭而生，而非倉庫。",
+  feats: [
+    { k: "登錄", h: "幾秒鐘登錄一件物品。", b: "掃描條碼或輸入名稱，加入數量、價格和存放位置。批次會記錄購買日期和有效期限。" },
+    { k: "標籤", h: "依你的方式整理。", b: "依類別或狀態建立自己的標籤和標籤群組。清單把相關的物品集中在一起。" },
+    { k: "提醒", h: "及時提醒。", b: "Nifuda 會顯示即將到期和低於最低庫存的物品，購物前就知道缺什麼。" },
+    { k: "統計", h: "價值一目了然。", b: "總價值、各存放位置的價值以及本月消耗。適用於保險、搬家，或只是掌握全局。" }
+  ],
+  ipad_k: "iPad", ipad_h: "更大的空間，檢視所有物品。", ipad_b: "在 iPad 上一眼看到所有物品。透過 iCloud，iPhone 和 iPad 自動保持同步。",
+  priv_k: "隱私", priv_h: "你的資料只屬於你。",
+  priv_pts: [
+    { h: "無需帳號", b: "無需註冊、電子郵件或密碼。打開 App 即可開始。" },
+    { h: "無追蹤", b: "Nifuda 不含任何分析或廣告工具。我們看不到你登錄的內容。" },
+    { h: "你的 iCloud", b: "資料儲存在你的裝置上，也可選擇儲存在你的私人 iCloud。Nifuda 沒有伺服器。" }
+  ],
+  faq_k: "常見問題", faq_h: "常見問題", faq_more: "還有其他問題？請聯絡我們：",
+  faqs: [
+    { q: "需要帳號嗎？", a: "不需要。Nifuda 無需註冊即可使用，資料儲存在你的裝置上。" },
+    { q: "我的資料儲存在哪裡？", a: "儲存在你的 iPhone 或 iPad 本機。如有需要，Nifuda 可透過你的私人 iCloud 在裝置間同步。" },
+    { q: "Nifuda 要付費嗎？", a: "免費下載。Nifuda Pro 一次性購買即可解鎖所有功能，無需訂閱。" },
+    { q: "可以匯出物品清單嗎？", a: "可以，匯出為包含價值、數量和存放位置的 PDF 報告，例如用於住家保險。" },
+    { q: "支援哪些裝置？", a: "iPhone 和 iPad。購買 Pro 後，使用同一 Apple 帳號的所有裝置皆可使用。" }
+  ],
+  cta_h: "讓家井然有序。", cta_b: "下載 Nifuda，一分鐘內登錄第一件物品。",
+  foot_tag: "家庭物品管理。本機或 iCloud、私密、無需帳號。", foot_legal: "法律資訊", foot_support: "支援", foot_lang: "語言",
+  foot_apple: "Apple、Apple 標誌、iPhone、iPad 和 iCloud 是 Apple Inc. 在美國及其他國家和地區註冊的商標。App Store 是 Apple Inc. 的服務標章。",
+  back: "返回首頁",
+  pp_title: "隱私權政策", pp_meta: "最後更新：2026 年 10 月",
+  pp: [
+    { h: "簡要說明", b: "Nifuda 不蒐集任何個人資料。沒有帳號、沒有追蹤，也沒有自有伺服器。" },
+    { h: "App 中的資料", b: "所有物品、照片、標籤和設定僅儲存在你的裝置上。我們無法存取。" },
+    { h: "iCloud 同步", b: "開啟同步後，Apple 會將你的資料儲存在你的私人 iCloud 資料庫中，適用 Apple 的隱私權政策。我們無法檢視這些資料。" },
+    { h: "相機與照片", b: "相機僅用於掃描條碼和拍攝物品。除透過你自己的 iCloud 外，圖片不會離開你的裝置。" },
+    { h: "購買", b: "所有購買皆由 Apple App Store 處理。我們不會收到任何付款資訊。" },
+    { h: "本網站", b: "本網站透過 GitHub Pages 提供。GitHub 可能會處理技術上必要的資料，例如你的 IP 位址。我們不使用 Cookie 或分析工具。" },
+    { h: "聯絡方式", b: "如有隱私相關問題，請寄信至 " + EMAIL + "。" }
+  ],
+  im_title: "法律聲明", im_meta: "依據德國 DDG 第 5 條提供的資訊",
+  im: [{"h":"提供者","b":"Dennis Bortmes\nWestendstraße 2\n83301 Traunreut\n德國"},{"h":"聯絡方式","b":"Tel.: +49 175 7196767\n電子郵件：contact.bortmes@icloud.com"},{"h":"Value added tax","b":"Small business under § 19 of the German VAT Act (UStG) – no VAT is shown."},{"h":"Consumer dispute resolution","b":"We are neither obliged nor willing to participate in dispute resolution proceedings before a consumer arbitration board."},{"h":"Single point of contact under the Digital Services Act – DSA (Regulation (EU) 2022/2065)","b":"Our single point of contact for users and authorities under Art. 11, 12 DSA can be reached as follows:\nEmail: contact.bortmes@icloud.com\nLanguages available for communication: German, English."},{"h":"Note","b":"This is a courtesy translation. The German version is the legally binding one."}]
+},
+ko: {
+  nav_features: "기능", nav_privacy: "개인정보", nav_faq: "FAQ",
+  hero_kicker: "iPhone 및 iPad용 재고 관리 앱",
+  hero_h: "가진 모든 것을, 한곳에.",
+  hero_sub: "Nifuda는 식료품, 전자기기, 공구, 수집품을 보관 위치, 수량, 가치와 함께 기록합니다. 기기에 저장되고 원하면 iCloud로 동기화되며, 계정이 필요 없습니다.",
+  hero_note: "무료 다운로드\nPro는 일회성 구매",
+  facts: ["계정 불필요", "로컬 및 iCloud", "바코드 스캐너", "iPhone 및 iPad"],
+  tag_place: "책상", alt_home: "Nifuda 홈 화면",
+  feat_k: "기능", feat_h: "창고가 아닌, 집을 위해 만들었습니다.",
+  feats: [
+    { k: "등록", h: "몇 초 만에 물품 등록.", b: "바코드를 스캔하거나 이름을 입력하세요. 수량, 가격, 보관 위치를 추가하고 배치별로 구매일과 유통기한을 관리합니다." },
+    { k: "태그", h: "나만의 방식으로 정리.", b: "카테고리나 상태별로 태그와 태그 그룹을 직접 만드세요. 목록으로 관련된 물품을 한데 모을 수 있습니다." },
+    { k: "알림", h: "제때 알려 드립니다.", b: "Nifuda는 곧 만료되는 물품과 최소 재고 아래로 떨어진 물품을 보여 줍니다. 장보기 전에 무엇이 부족한지 알 수 있습니다." },
+    { k: "통계", h: "가치를 한눈에.", b: "총 가치, 보관 위치별 가치, 이번 달 사용량을 확인하세요. 보험, 이사, 또는 전체 현황 파악에 유용합니다." }
+  ],
+  ipad_k: "iPad", ipad_h: "더 넓은 화면으로 재고 확인.", ipad_b: "iPad에서는 전체 재고를 한눈에 볼 수 있습니다. iCloud로 iPhone과 iPad가 자동으로 동기화됩니다.",
+  priv_k: "개인정보", priv_h: "당신의 데이터는 당신에게.",
+  priv_pts: [
+    { h: "계정 불필요", b: "가입도, 이메일 주소도, 비밀번호도 필요 없습니다. 앱을 열고 바로 시작하세요." },
+    { h: "추적 없음", b: "Nifuda에는 분석 도구나 광고 도구가 없습니다. 무엇을 등록하는지 저희는 볼 수 없습니다." },
+    { h: "나의 iCloud", b: "데이터는 기기와, 원하면 개인 iCloud에 저장됩니다. Nifuda 서버는 존재하지 않습니다." }
+  ],
+  faq_k: "FAQ", faq_h: "자주 묻는 질문", faq_more: "다른 질문이 있으신가요? 메일 주세요:",
+  faqs: [
+    { q: "계정이 필요한가요?", a: "아니요. Nifuda는 가입 없이 사용할 수 있습니다. 데이터는 기기에 저장됩니다." },
+    { q: "데이터는 어디에 저장되나요?", a: "iPhone 또는 iPad에 로컬로 저장됩니다. 원하면 개인 iCloud를 통해 기기 간에 동기화할 수 있습니다." },
+    { q: "Nifuda는 얼마인가요?", a: "다운로드는 무료입니다. Nifuda Pro는 일회성 구매로 모든 기능을 사용할 수 있으며, 구독이 없습니다." },
+    { q: "재고를 내보낼 수 있나요?", a: "네. 가치, 수량, 보관 위치가 포함된 PDF 보고서로 내보낼 수 있어 주택 보험 등에 활용할 수 있습니다." },
+    { q: "어떤 기기에서 사용할 수 있나요?", a: "iPhone과 iPad입니다. Pro 구매는 같은 Apple 계정을 사용하는 모든 기기에 적용됩니다." }
+  ],
+  cta_h: "집 안을 깔끔하게 정리하세요.", cta_b: "Nifuda를 다운로드하고 1분 안에 첫 물품을 등록하세요.",
+  foot_tag: "집을 위한 재고 관리. 로컬 또는 iCloud, 프라이빗, 계정 불필요.", foot_legal: "법적 고지", foot_support: "지원", foot_lang: "언어",
+  foot_apple: "Apple, Apple 로고, iPhone, iPad 및 iCloud는 미국 및 기타 국가에 등록된 Apple Inc.의 상표입니다. App Store는 Apple Inc.의 서비스 마크입니다.",
+  back: "홈으로",
+  pp_title: "개인정보 처리방침", pp_meta: "최종 업데이트: 2026년 10월",
+  pp: [
+    { h: "요약", b: "Nifuda는 개인 데이터를 수집하지 않습니다. 계정, 추적, 자체 서버가 없습니다." },
+    { h: "앱 내 데이터", b: "모든 물품, 사진, 태그, 설정은 기기에만 저장됩니다. 저희는 접근할 수 없습니다." },
+    { h: "iCloud 동기화", b: "동기화를 켜면 Apple이 데이터를 개인 iCloud 데이터베이스에 저장하며, Apple의 개인정보 처리방침이 적용됩니다. 저희는 이 데이터를 볼 수 없습니다." },
+    { h: "카메라 및 사진", b: "카메라는 바코드 스캔과 물품 촬영에만 사용됩니다. 이미지는 본인의 iCloud를 제외하고 기기 밖으로 나가지 않습니다." },
+    { h: "구매", b: "구매는 전적으로 Apple App Store에서 처리됩니다. 결제 정보는 저희에게 전달되지 않습니다." },
+    { h: "이 웹사이트", b: "이 웹사이트는 GitHub Pages를 통해 제공됩니다. GitHub는 IP 주소 등 기술적으로 필요한 데이터를 처리할 수 있습니다. 쿠키나 분석 도구는 사용하지 않습니다." },
+    { h: "문의", b: "개인정보 관련 문의는 " + EMAIL + "로 보내 주세요." }
+  ],
+  im_title: "사업자 정보", im_meta: "독일 DDG 제5조에 따른 정보",
+  im: [{"h":"제공자","b":"Dennis Bortmes\nWestendstraße 2\n83301 Traunreut\n독일"},{"h":"연락처","b":"Tel.: +49 175 7196767\n이메일: contact.bortmes@icloud.com"},{"h":"Value added tax","b":"Small business under § 19 of the German VAT Act (UStG) – no VAT is shown."},{"h":"Consumer dispute resolution","b":"We are neither obliged nor willing to participate in dispute resolution proceedings before a consumer arbitration board."},{"h":"Single point of contact under the Digital Services Act – DSA (Regulation (EU) 2022/2065)","b":"Our single point of contact for users and authorities under Art. 11, 12 DSA can be reached as follows:\nEmail: contact.bortmes@icloud.com\nLanguages available for communication: German, English."},{"h":"Note","b":"This is a courtesy translation. The German version is the legally binding one."}]
+},
+nl: {
+  nav_features: "Functies", nav_privacy: "Privacy", nav_faq: "FAQ",
+  hero_kicker: "Inventaris-app voor iPhone en iPad",
+  hero_h: "Alles wat je bezit. Op één plek.",
+  hero_sub: "Nifuda houdt voorraad, elektronica, gereedschap en verzamelingen bij, met locatie, aantal en waarde. Opgeslagen op je apparaat, desgewenst gesynchroniseerd via iCloud en zonder account.",
+  hero_note: "Gratis downloaden\nPro als eenmalige aankoop",
+  facts: ["Geen account", "Lokaal en iCloud", "Barcodescanner", "iPhone en iPad"],
+  tag_place: "Bureau", alt_home: "Startscherm van Nifuda",
+  feat_k: "Functies", feat_h: "Gemaakt voor thuis, niet voor een magazijn.",
+  feats: [
+    { k: "Toevoegen", h: "Een item in een paar seconden.", b: "Scan een barcode of typ een naam. Voeg aantal, prijs en locatie toe; batches onthouden aankoopdatum en houdbaarheid." },
+    { k: "Tags", h: "Geordend op jouw manier.", b: "Maak eigen tags en taggroepen, bijvoorbeeld op categorie of status. Lijsten brengen bij elkaar wat bij elkaar hoort." },
+    { k: "Meldingen", h: "Op tijd herinnerd.", b: "Nifuda laat zien wat bijna verloopt en wat onder de minimumvoorraad zakt. Zo weet je vóór het boodschappen doen wat er ontbreekt." },
+    { k: "Statistieken", h: "Weet wat het waard is.", b: "Totale waarde, waarde per locatie en wat je deze maand hebt verbruikt. Handig voor de verzekering, een verhuizing of gewoon voor het overzicht." }
+  ],
+  ipad_k: "iPad", ipad_h: "Meer ruimte voor je inventaris.", ipad_b: "Op de iPad zie je je hele inventaris in één oogopslag. Met iCloud blijven iPhone en iPad automatisch gelijk.",
+  priv_k: "Privacy", priv_h: "Je gegevens blijven bij jou.",
+  priv_pts: [
+    { h: "Geen account", b: "Geen registratie, geen e-mailadres, geen wachtwoord. Open de app en begin." },
+    { h: "Geen tracking", b: "Nifuda bevat geen analyse- of advertentietools. Wij zien niet wat je toevoegt." },
+    { h: "Jouw iCloud", b: "Gegevens worden opgeslagen op je apparaat en, als je wilt, in je privé-iCloud. Er bestaat geen Nifuda-server." }
+  ],
+  faq_k: "FAQ", faq_h: "Veelgestelde vragen", faq_more: "Nog iets? Mail ons:",
+  faqs: [
+    { q: "Heb ik een account nodig?", a: "Nee. Nifuda werkt zonder registratie. Je gegevens staan op je apparaat." },
+    { q: "Waar worden mijn gegevens opgeslagen?", a: "Lokaal op je iPhone of iPad. Als je wilt, synchroniseert Nifuda via je privé-iCloud tussen je apparaten." },
+    { q: "Wat kost Nifuda?", a: "De download is gratis. Nifuda Pro ontgrendelt alle functies met een eenmalige aankoop, zonder abonnement." },
+    { q: "Kan ik mijn inventaris exporteren?", a: "Ja, als pdf-rapport met waarden, aantallen en locaties, bijvoorbeeld voor je inboedelverzekering." },
+    { q: "Op welke apparaten werkt Nifuda?", a: "Op iPhone en iPad. Een Pro-aankoop geldt voor alle apparaten met dezelfde Apple Account." }
+  ],
+  cta_h: "Breng orde in je huis.", cta_b: "Download Nifuda en voeg binnen een minuut je eerste item toe.",
+  foot_tag: "Inventaris voor thuis. Lokaal of via iCloud, privé en zonder account.", foot_legal: "Juridisch", foot_support: "Support", foot_lang: "Taal",
+  foot_apple: "Apple, het Apple-logo, iPhone, iPad en iCloud zijn handelsmerken van Apple Inc., gedeponeerd in de VS en andere landen. App Store is een dienstmerk van Apple Inc.",
+  back: "Terug naar home",
+  pp_title: "Privacy", pp_meta: "Laatst bijgewerkt: oktober 2026",
+  pp: [
+    { h: "In het kort", b: "Nifuda verzamelt geen persoonsgegevens. Er is geen account, geen tracking en geen eigen server." },
+    { h: "Gegevens in de app", b: "Alle items, foto’s, tags en instellingen worden alleen op je apparaat opgeslagen. Wij hebben er geen toegang toe." },
+    { h: "iCloud-synchronisatie", b: "Als je synchronisatie inschakelt, slaat Apple je gegevens op in je privé-iCloud-database. Daarvoor geldt het privacybeleid van Apple. Wij kunnen deze gegevens niet inzien." },
+    { h: "Camera en foto’s", b: "De camera wordt alleen gebruikt om barcodes te scannen en items te fotograferen. Afbeeldingen verlaten je apparaat alleen via je eigen iCloud." },
+    { h: "Aankopen", b: "Aankopen worden volledig afgehandeld via de App Store van Apple. Wij ontvangen geen betaalgegevens." },
+    { h: "Deze website", b: "Deze website wordt aangeboden via GitHub Pages. GitHub kan technisch noodzakelijke gegevens zoals je IP-adres verwerken. Wij gebruiken geen cookies en geen analysetools." },
+    { h: "Contact", b: "Vragen over privacy beantwoorden we graag via " + EMAIL + "." }
+  ],
+  im_title: "Colofon", im_meta: "Gegevens volgens § 5 DDG (Duitsland)",
+  im: [{"h":"Aanbieder","b":"Dennis Bortmes\nWestendstraße 2\n83301 Traunreut\nDuitsland"},{"h":"Contact","b":"Tel.: +49 175 7196767\nE-mail: contact.bortmes@icloud.com"},{"h":"Value added tax","b":"Small business under § 19 of the German VAT Act (UStG) – no VAT is shown."},{"h":"Consumer dispute resolution","b":"We are neither obliged nor willing to participate in dispute resolution proceedings before a consumer arbitration board."},{"h":"Single point of contact under the Digital Services Act – DSA (Regulation (EU) 2022/2065)","b":"Our single point of contact for users and authorities under Art. 11, 12 DSA can be reached as follows:\nEmail: contact.bortmes@icloud.com\nLanguages available for communication: German, English."},{"h":"Note","b":"This is a courtesy translation. The German version is the legally binding one."}]
+},
+pl: {
+  nav_features: "Funkcje", nav_privacy: "Prywatność", nav_faq: "FAQ",
+  hero_kicker: "Aplikacja do inwentaryzacji na iPhone’a i iPada",
+  hero_h: "Wszystko, co posiadasz. W jednym miejscu.",
+  hero_sub: "Nifuda zapisuje zapasy, elektronikę, narzędzia i kolekcje z miejscem, ilością i wartością. Dane zostają na urządzeniu, opcjonalnie synchronizowane przez iCloud, bez konta.",
+  hero_note: "Pobierz za darmo\nPro jako jednorazowy zakup",
+  facts: ["Bez konta", "Lokalnie i iCloud", "Skaner kodów kreskowych", "iPhone i iPad"],
+  tag_place: "Biurko", alt_home: "Ekran główny Nifuda",
+  feat_k: "Funkcje", feat_h: "Stworzona dla domu, nie dla magazynu.",
+  feats: [
+    { k: "Dodawanie", h: "Przedmiot w kilka sekund.", b: "Zeskanuj kod kreskowy lub wpisz nazwę. Dodaj ilość, cenę i miejsce; partie zapamiętują datę zakupu i termin ważności." },
+    { k: "Tagi", h: "Porządek po twojemu.", b: "Twórz własne tagi i grupy tagów, np. według kategorii lub statusu. Listy łączą to, co do siebie pasuje." },
+    { k: "Alerty", h: "Przypomnienie na czas.", b: "Nifuda pokazuje, co wkrótce traci ważność i co spada poniżej minimalnego stanu. Przed zakupami wiesz, czego brakuje." },
+    { k: "Statystyki", h: "Znaj wartość swoich rzeczy.", b: "Wartość całkowita, wartość według miejsca i zużycie w tym miesiącu. Przydatne przy ubezpieczeniu, przeprowadzce lub po prostu dla przeglądu." }
+  ],
+  ipad_k: "iPad", ipad_h: "Więcej miejsca na twój inwentarz.", ipad_b: "Na iPadzie widzisz cały inwentarz na pierwszy rzut oka. Dzięki iCloud iPhone i iPad synchronizują się automatycznie.",
+  priv_k: "Prywatność", priv_h: "Twoje dane zostają u ciebie.",
+  priv_pts: [
+    { h: "Bez konta", b: "Bez rejestracji, adresu e-mail i hasła. Otwórz aplikację i zacznij." },
+    { h: "Bez śledzenia", b: "Nifuda nie zawiera narzędzi analitycznych ani reklamowych. Nie widzimy, co dodajesz." },
+    { h: "Twój iCloud", b: "Dane są zapisywane na urządzeniu i opcjonalnie w twoim prywatnym iCloud. Serwer Nifuda nie istnieje." }
+  ],
+  faq_k: "FAQ", faq_h: "Często zadawane pytania", faq_more: "Masz inne pytanie? Napisz do nas:",
+  faqs: [
+    { q: "Czy potrzebuję konta?", a: "Nie. Nifuda działa bez rejestracji. Twoje dane są na twoim urządzeniu." },
+    { q: "Gdzie są przechowywane moje dane?", a: "Lokalnie na iPhonie lub iPadzie. Jeśli chcesz, Nifuda synchronizuje urządzenia przez twój prywatny iCloud." },
+    { q: "Ile kosztuje Nifuda?", a: "Pobranie jest bezpłatne. Nifuda Pro odblokowuje wszystkie funkcje jednorazowym zakupem, bez subskrypcji." },
+    { q: "Czy mogę wyeksportować inwentarz?", a: "Tak, jako raport PDF z wartościami, ilościami i miejscami, np. dla ubezpieczenia mieszkania." },
+    { q: "Na jakich urządzeniach działa Nifuda?", a: "Na iPhonie i iPadzie. Zakup Pro obowiązuje na wszystkich urządzeniach z tym samym kontem Apple." }
+  ],
+  cta_h: "Zaprowadź porządek w domu.", cta_b: "Pobierz Nifuda i dodaj pierwszy przedmiot w niecałą minutę.",
+  foot_tag: "Inwentarz dla twojego domu. Lokalnie lub w iCloud, prywatnie i bez konta.", foot_legal: "Informacje prawne", foot_support: "Pomoc", foot_lang: "Język",
+  foot_apple: "Apple, logo Apple, iPhone, iPad i iCloud są znakami towarowymi Apple Inc., zastrzeżonymi w USA i innych krajach. App Store jest znakiem usługowym Apple Inc.",
+  back: "Strona główna",
+  pp_title: "Prywatność", pp_meta: "Ostatnia aktualizacja: październik 2026",
+  pp: [
+    { h: "W skrócie", b: "Nifuda nie zbiera danych osobowych. Nie ma konta, śledzenia ani własnego serwera." },
+    { h: "Dane w aplikacji", b: "Wszystkie przedmioty, zdjęcia, tagi i ustawienia są zapisywane wyłącznie na twoim urządzeniu. Nie mamy do nich dostępu." },
+    { h: "Synchronizacja iCloud", b: "Po włączeniu synchronizacji Apple zapisuje dane w twojej prywatnej bazie iCloud, zgodnie z polityką prywatności Apple. Nie możemy przeglądać tych danych." },
+    { h: "Aparat i zdjęcia", b: "Aparat służy wyłącznie do skanowania kodów i fotografowania przedmiotów. Zdjęcia opuszczają urządzenie tylko przez twój własny iCloud." },
+    { h: "Zakupy", b: "Zakupy są w całości obsługiwane przez App Store firmy Apple. Nie otrzymujemy danych płatniczych." },
+    { h: "Ta strona", b: "Strona jest udostępniana przez GitHub Pages. GitHub może przetwarzać technicznie niezbędne dane, np. adres IP. Nie używamy plików cookie ani narzędzi analitycznych." },
+    { h: "Kontakt", b: "Pytania dotyczące prywatności prosimy kierować na " + EMAIL + "." }
+  ],
+  im_title: "Nota prawna", im_meta: "Informacje zgodnie z § 5 DDG (Niemcy)",
+  im: [{"h":"Dostawca","b":"Dennis Bortmes\nWestendstraße 2\n83301 Traunreut\nNiemcy"},{"h":"Kontakt","b":"Tel.: +49 175 7196767\nE-mail: contact.bortmes@icloud.com"},{"h":"Value added tax","b":"Small business under § 19 of the German VAT Act (UStG) – no VAT is shown."},{"h":"Consumer dispute resolution","b":"We are neither obliged nor willing to participate in dispute resolution proceedings before a consumer arbitration board."},{"h":"Single point of contact under the Digital Services Act – DSA (Regulation (EU) 2022/2065)","b":"Our single point of contact for users and authorities under Art. 11, 12 DSA can be reached as follows:\nEmail: contact.bortmes@icloud.com\nLanguages available for communication: German, English."},{"h":"Note","b":"This is a courtesy translation. The German version is the legally binding one."}]
+},
+pt: {
+  nav_features: "Recursos", nav_privacy: "Privacidade", nav_faq: "FAQ",
+  hero_kicker: "App de inventário para iPhone e iPad",
+  hero_h: "Tudo o que você tem. Em um só lugar.",
+  hero_sub: "O Nifuda registra mantimentos, eletrônicos, ferramentas e coleções com local, quantidade e valor. Salvo no aparelho, sincronizado pelo iCloud se você quiser, sem conta.",
+  hero_note: "Download gratuito\nPro em compra única",
+  facts: ["Sem conta", "Local e iCloud", "Leitor de código de barras", "iPhone e iPad"],
+  tag_place: "Escrivaninha", alt_home: "Tela inicial do Nifuda",
+  feat_k: "Recursos", feat_h: "Feito para a sua casa, não para um depósito.",
+  feats: [
+    { k: "Cadastrar", h: "Um item em segundos.", b: "Escaneie um código de barras ou digite um nome. Adicione quantidade, preço e local; os lotes guardam a data de compra e a validade." },
+    { k: "Tags", h: "Organizado do seu jeito.", b: "Crie suas próprias tags e grupos de tags, por categoria ou status. As listas reúnem o que combina." },
+    { k: "Alertas", h: "Lembrado a tempo.", b: "O Nifuda mostra o que vence em breve e o que fica abaixo do estoque mínimo. Antes das compras, você já sabe o que falta." },
+    { k: "Estatísticas", h: "Saiba quanto vale.", b: "Valor total, valor por local e o que foi consumido no mês. Útil para o seguro, uma mudança ou simplesmente para ter uma visão geral." }
+  ],
+  ipad_k: "iPad", ipad_h: "Mais espaço para o seu inventário.", ipad_b: "No iPad, você vê todo o inventário de uma vez. Com o iCloud, iPhone e iPad ficam sincronizados automaticamente.",
+  priv_k: "Privacidade", priv_h: "Seus dados ficam com você.",
+  priv_pts: [
+    { h: "Sem conta", b: "Sem cadastro, sem e-mail, sem senha. Abra o app e comece." },
+    { h: "Sem rastreamento", b: "O Nifuda não tem ferramentas de análise nem de publicidade. Não vemos o que você cadastra." },
+    { h: "Seu iCloud", b: "Os dados ficam no seu aparelho e, se quiser, no seu iCloud privado. Não existe servidor do Nifuda." }
+  ],
+  faq_k: "FAQ", faq_h: "Perguntas frequentes", faq_more: "Mais alguma dúvida? Escreva para nós:",
+  faqs: [
+    { q: "Preciso de uma conta?", a: "Não. O Nifuda funciona sem cadastro. Seus dados ficam no seu aparelho." },
+    { q: "Onde meus dados ficam salvos?", a: "Localmente no seu iPhone ou iPad. Se quiser, o Nifuda sincroniza seus aparelhos pelo seu iCloud privado." },
+    { q: "Quanto custa o Nifuda?", a: "O download é gratuito. O Nifuda Pro libera todos os recursos com uma compra única, sem assinatura." },
+    { q: "Posso exportar meu inventário?", a: "Sim, como relatório em PDF com valores, quantidades e locais, por exemplo para o seguro residencial." },
+    { q: "Em quais aparelhos o Nifuda funciona?", a: "No iPhone e no iPad. A compra do Pro vale para todos os aparelhos com a mesma Conta Apple." }
+  ],
+  cta_h: "Coloque a casa em ordem.", cta_b: "Baixe o Nifuda e cadastre seu primeiro item em menos de um minuto.",
+  foot_tag: "Inventário para a sua casa. Local ou via iCloud, privado e sem conta.", foot_legal: "Jurídico", foot_support: "Suporte", foot_lang: "Idioma",
+  foot_apple: "Apple, o logotipo da Apple, iPhone, iPad e iCloud são marcas comerciais da Apple Inc., registradas nos EUA e em outros países. App Store é uma marca de serviço da Apple Inc.",
+  back: "Voltar ao início",
+  pp_title: "Privacidade", pp_meta: "Última atualização: outubro de 2026",
+  pp: [
+    { h: "Em resumo", b: "O Nifuda não coleta dados pessoais. Não há conta, rastreamento nem servidor próprio." },
+    { h: "Dados no app", b: "Todos os itens, fotos, tags e ajustes ficam salvos apenas no seu aparelho. Não temos acesso a eles." },
+    { h: "Sincronização com iCloud", b: "Se você ativar a sincronização, a Apple salva seus dados no seu banco de dados privado do iCloud, sujeito à política de privacidade da Apple. Não podemos ver esses dados." },
+    { h: "Câmera e fotos", b: "A câmera é usada apenas para escanear códigos de barras e fotografar itens. As imagens só saem do aparelho pelo seu próprio iCloud." },
+    { h: "Compras", b: "As compras são processadas inteiramente pela App Store da Apple. Não recebemos dados de pagamento." },
+    { h: "Este site", b: "Este site é hospedado no GitHub Pages. O GitHub pode tratar dados tecnicamente necessários, como seu endereço IP. Não usamos cookies nem ferramentas de análise." },
+    { h: "Contato", b: "Dúvidas sobre privacidade: escreva para " + EMAIL + "." }
+  ],
+  im_title: "Informações legais", im_meta: "Informações conforme o § 5 DDG (Alemanha)",
+  im: [{"h":"Responsável","b":"Dennis Bortmes\nWestendstraße 2\n83301 Traunreut\nAlemanha"},{"h":"Contato","b":"Tel.: +49 175 7196767\nE-mail: contact.bortmes@icloud.com"},{"h":"Value added tax","b":"Small business under § 19 of the German VAT Act (UStG) – no VAT is shown."},{"h":"Consumer dispute resolution","b":"We are neither obliged nor willing to participate in dispute resolution proceedings before a consumer arbitration board."},{"h":"Single point of contact under the Digital Services Act – DSA (Regulation (EU) 2022/2065)","b":"Our single point of contact for users and authorities under Art. 11, 12 DSA can be reached as follows:\nEmail: contact.bortmes@icloud.com\nLanguages available for communication: German, English."},{"h":"Note","b":"This is a courtesy translation. The German version is the legally binding one."}]
+},
+ru: {
+  nav_features: "Функции", nav_privacy: "Конфиденциальность", nav_faq: "Вопросы",
+  hero_kicker: "Приложение для учёта вещей на iPhone и iPad",
+  hero_h: "Всё, что у вас есть. В одном месте.",
+  hero_sub: "Nifuda учитывает продукты, технику, инструменты и коллекции с местом хранения, количеством и стоимостью. Данные хранятся на устройстве, по желанию синхронизируются через iCloud, без аккаунта.",
+  hero_note: "Бесплатная загрузка\nPro — разовая покупка",
+  facts: ["Без аккаунта", "Локально и iCloud", "Сканер штрихкодов", "iPhone и iPad"],
+  tag_place: "Рабочий стол", alt_home: "Главный экран Nifuda",
+  feat_k: "Функции", feat_h: "Для дома, а не для склада.",
+  feats: [
+    { k: "Добавление", h: "Вещь за пару секунд.", b: "Отсканируйте штрихкод или введите название. Добавьте количество, цену и место хранения; партии хранят дату покупки и срок годности." },
+    { k: "Теги", h: "Порядок по вашим правилам.", b: "Создавайте свои теги и группы тегов — по категории или статусу. Списки объединяют то, что связано." },
+    { k: "Уведомления", h: "Напомним вовремя.", b: "Nifuda показывает, у чего скоро истекает срок и что опустилось ниже минимального запаса. Перед покупками вы знаете, чего не хватает." },
+    { k: "Статистика", h: "Знайте, сколько это стоит.", b: "Общая стоимость, стоимость по местам хранения и расход за месяц. Пригодится для страховки, переезда или просто для общего обзора." }
+  ],
+  ipad_k: "iPad", ipad_h: "Больше места для ваших вещей.", ipad_b: "На iPad весь учёт виден сразу. Через iCloud iPhone и iPad синхронизируются автоматически.",
+  priv_k: "Конфиденциальность", priv_h: "Ваши данные остаются у вас.",
+  priv_pts: [
+    { h: "Без аккаунта", b: "Без регистрации, e-mail и пароля. Откройте приложение и начните." },
+    { h: "Без отслеживания", b: "В Nifuda нет инструментов аналитики и рекламы. Мы не видим, что вы добавляете." },
+    { h: "Ваш iCloud", b: "Данные хранятся на устройстве и при желании в вашем личном iCloud. Сервера Nifuda не существует." }
+  ],
+  faq_k: "Вопросы", faq_h: "Частые вопросы", faq_more: "Остались вопросы? Напишите нам:",
+  faqs: [
+    { q: "Нужен ли аккаунт?", a: "Нет. Nifuda работает без регистрации. Данные хранятся на вашем устройстве." },
+    { q: "Где хранятся мои данные?", a: "Локально на iPhone или iPad. При желании Nifuda синхронизирует устройства через ваш личный iCloud." },
+    { q: "Сколько стоит Nifuda?", a: "Загрузка бесплатна. Nifuda Pro открывает все функции разовой покупкой, без подписки." },
+    { q: "Можно ли экспортировать данные?", a: "Да, в виде PDF-отчёта со стоимостью, количеством и местами хранения — например, для страхования имущества." },
+    { q: "На каких устройствах работает Nifuda?", a: "На iPhone и iPad. Покупка Pro действует на всех устройствах с одним Apple Account." }
+  ],
+  cta_h: "Наведите порядок дома.", cta_b: "Загрузите Nifuda и добавьте первую вещь меньше чем за минуту.",
+  foot_tag: "Учёт вещей для дома. Локально или в iCloud, приватно и без аккаунта.", foot_legal: "Правовая информация", foot_support: "Поддержка", foot_lang: "Язык",
+  foot_apple: "Apple, логотип Apple, iPhone, iPad и iCloud — товарные знаки Apple Inc., зарегистрированные в США и других странах. App Store — знак обслуживания Apple Inc.",
+  back: "На главную",
+  pp_title: "Конфиденциальность", pp_meta: "Обновлено: октябрь 2026",
+  pp: [
+    { h: "Кратко", b: "Nifuda не собирает персональные данные. Нет аккаунта, отслеживания и собственного сервера." },
+    { h: "Данные в приложении", b: "Все вещи, фото, теги и настройки хранятся только на вашем устройстве. У нас нет к ним доступа." },
+    { h: "Синхронизация iCloud", b: "Если вы включите синхронизацию, Apple сохранит данные в вашей личной базе iCloud в соответствии с политикой конфиденциальности Apple. Мы не можем просматривать эти данные." },
+    { h: "Камера и фото", b: "Камера используется только для сканирования штрихкодов и съёмки вещей. Изображения покидают устройство только через ваш собственный iCloud." },
+    { h: "Покупки", b: "Покупки полностью обрабатываются через App Store компании Apple. Платёжные данные мы не получаем." },
+    { h: "Этот сайт", b: "Сайт размещён на GitHub Pages. GitHub может обрабатывать технически необходимые данные, например IP-адрес. Мы не используем cookie и инструменты аналитики." },
+    { h: "Контакты", b: "Вопросы о конфиденциальности присылайте на " + EMAIL + "." }
+  ],
+  im_title: "Выходные данные", im_meta: "Сведения согласно § 5 DDG (Германия)",
+  im: [{"h":"Владелец","b":"Dennis Bortmes\nWestendstraße 2\n83301 Traunreut\nГермания"},{"h":"Контакты","b":"Tel.: +49 175 7196767\nE-mail: contact.bortmes@icloud.com"},{"h":"Value added tax","b":"Small business under § 19 of the German VAT Act (UStG) – no VAT is shown."},{"h":"Consumer dispute resolution","b":"We are neither obliged nor willing to participate in dispute resolution proceedings before a consumer arbitration board."},{"h":"Single point of contact under the Digital Services Act – DSA (Regulation (EU) 2022/2065)","b":"Our single point of contact for users and authorities under Art. 11, 12 DSA can be reached as follows:\nEmail: contact.bortmes@icloud.com\nLanguages available for communication: German, English."},{"h":"Note","b":"This is a courtesy translation. The German version is the legally binding one."}]
+},
+tr: {
+  nav_features: "Özellikler", nav_privacy: "Gizlilik", nav_faq: "SSS",
+  hero_kicker: "iPhone ve iPad için envanter uygulaması",
+  hero_h: "Sahip olduğun her şey. Tek bir yerde.",
+  hero_sub: "Nifuda; erzakları, elektronikleri, aletleri ve koleksiyonları konum, miktar ve değerle kaydeder. Cihazında saklanır, istersen iCloud ile eşitlenir, hesap gerekmez.",
+  hero_note: "Ücretsiz indir\nPro tek seferlik satın alım",
+  facts: ["Hesap yok", "Yerel ve iCloud", "Barkod tarayıcı", "iPhone ve iPad"],
+  tag_place: "Masa", alt_home: "Nifuda ana ekranı",
+  feat_k: "Özellikler", feat_h: "Depo için değil, ev için tasarlandı.",
+  feats: [
+    { k: "Ekle", h: "Saniyeler içinde bir ürün.", b: "Barkodu tara ya da adını yaz. Miktar, fiyat ve konum ekle; partiler satın alma ve son kullanma tarihini saklar." },
+    { k: "Etiketler", h: "Kendi düzenin.", b: "Kategoriye veya duruma göre kendi etiketlerini ve etiket gruplarını oluştur. Listeler birbirine ait olanları bir araya getirir." },
+    { k: "Uyarılar", h: "Zamanında hatırlatma.", b: "Nifuda yakında süresi dolacakları ve minimum stokun altına düşenleri gösterir. Alışverişten önce neyin eksik olduğunu bilirsin." },
+    { k: "İstatistikler", h: "Değerini bil.", b: "Toplam değer, konuma göre değer ve bu ay tüketilenler. Sigorta, taşınma ya da sadece genel bakış için kullanışlı." }
+  ],
+  ipad_k: "iPad", ipad_h: "Envanterin için daha fazla alan.", ipad_b: "iPad’de tüm envanterini tek bakışta görürsün. iCloud ile iPhone ve iPad otomatik olarak eşitlenir.",
+  priv_k: "Gizlilik", priv_h: "Verilerin sende kalır.",
+  priv_pts: [
+    { h: "Hesap yok", b: "Kayıt yok, e-posta yok, parola yok. Uygulamayı aç ve başla." },
+    { h: "Takip yok", b: "Nifuda’da analiz veya reklam aracı yoktur. Ne eklediğini göremeyiz." },
+    { h: "Senin iCloud’un", b: "Veriler cihazında ve istersen kişisel iCloud’unda saklanır. Bir Nifuda sunucusu yoktur." }
+  ],
+  faq_k: "SSS", faq_h: "Sık sorulan sorular", faq_more: "Başka bir sorun mu var? Bize yaz:",
+  faqs: [
+    { q: "Hesap gerekiyor mu?", a: "Hayır. Nifuda kayıt olmadan çalışır. Verilerin cihazında durur." },
+    { q: "Verilerim nerede saklanıyor?", a: "iPhone veya iPad’inde yerel olarak. İstersen Nifuda, kişisel iCloud’un üzerinden cihazlarını eşitler." },
+    { q: "Nifuda ne kadar?", a: "İndirmesi ücretsiz. Nifuda Pro, abonelik olmadan tek seferlik satın alımla tüm özellikleri açar." },
+    { q: "Envanterimi dışa aktarabilir miyim?", a: "Evet, değer, miktar ve konum içeren bir PDF raporu olarak; örneğin konut sigortan için." },
+    { q: "Nifuda hangi cihazlarda çalışır?", a: "iPhone ve iPad’de. Pro satın alımı aynı Apple Hesabı’nı kullanan tüm cihazlarda geçerlidir." }
+  ],
+  cta_h: "Evine düzen getir.", cta_b: "Nifuda’yı indir ve ilk ürününü bir dakikadan kısa sürede ekle.",
+  foot_tag: "Evin için envanter. Yerel veya iCloud'da, gizli ve hesapsız.", foot_legal: "Yasal", foot_support: "Destek", foot_lang: "Dil",
+  foot_apple: "Apple, Apple logosu, iPhone, iPad ve iCloud, Apple Inc.’in ABD’de ve diğer ülkelerde tescilli ticari markalarıdır. App Store, Apple Inc.’in hizmet markasıdır.",
+  back: "Ana sayfaya dön",
+  pp_title: "Gizlilik", pp_meta: "Son güncelleme: Ekim 2026",
+  pp: [
+    { h: "Kısaca", b: "Nifuda kişisel veri toplamaz. Hesap, takip veya kendi sunucumuz yoktur." },
+    { h: "Uygulamadaki veriler", b: "Tüm ürünler, fotoğraflar, etiketler ve ayarlar yalnızca cihazında saklanır. Bunlara erişimimiz yoktur." },
+    { h: "iCloud eşitleme", b: "Eşitlemeyi açarsan Apple verilerini kişisel iCloud veritabanında saklar; Apple’ın gizlilik politikası geçerlidir. Bu verileri göremeyiz." },
+    { h: "Kamera ve fotoğraflar", b: "Kamera yalnızca barkod taramak ve ürün fotoğraflamak için kullanılır. Görseller yalnızca kendi iCloud’un üzerinden cihazından çıkar." },
+    { h: "Satın alımlar", b: "Satın alımlar tamamen Apple’ın App Store’u üzerinden yapılır. Ödeme bilgisi almayız." },
+    { h: "Bu web sitesi", b: "Bu site GitHub Pages üzerinden sunulur. GitHub, IP adresin gibi teknik olarak gerekli verileri işleyebilir. Çerez veya analiz aracı kullanmayız." },
+    { h: "İletişim", b: "Gizlilikle ilgili sorular için " + EMAIL + " adresine yazabilirsin." }
+  ],
+  im_title: "Künye", im_meta: "§ 5 DDG’ye (Almanya) göre bilgiler",
+  im: [{"h":"Sağlayıcı","b":"Dennis Bortmes\nWestendstraße 2\n83301 Traunreut\nAlmanya"},{"h":"İletişim","b":"Tel.: +49 175 7196767\nE-posta: contact.bortmes@icloud.com"},{"h":"Value added tax","b":"Small business under § 19 of the German VAT Act (UStG) – no VAT is shown."},{"h":"Consumer dispute resolution","b":"We are neither obliged nor willing to participate in dispute resolution proceedings before a consumer arbitration board."},{"h":"Single point of contact under the Digital Services Act – DSA (Regulation (EU) 2022/2065)","b":"Our single point of contact for users and authorities under Art. 11, 12 DSA can be reached as follows:\nEmail: contact.bortmes@icloud.com\nLanguages available for communication: German, English."},{"h":"Note","b":"This is a courtesy translation. The German version is the legally binding one."}]
+}
+};
+
+const IMG_KEYS = ["detail", "tags", "alerts", "stats"];
+
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    const meta = n => document.querySelector(`meta[name="${n}"]`)?.getAttribute("content");
+    this.deployed = !!meta("nf-lang");
+    this.base = meta("nf-base") ?? "site/";
+    const q = new URLSearchParams(location.search);
+    const lang = meta("nf-lang") || q.get("lang") || props.lang || "de";
+    this.state = {
+      lang: T[lang] ? lang : "de",
+      page: meta("nf-page") || q.get("page") || props.page || "home",
+      active: 0, langOpen: false, faqOpen: 0,
+      w: typeof window !== "undefined" ? window.innerWidth : 1280
+    };
+  }
+
+  componentDidMount() {
+    this._onResize = () => this.setState({ w: window.innerWidth });
+    window.addEventListener("resize", this._onResize);
+    this._onDocClick = e => { if (this.state.langOpen && !e.target.closest("[aria-label=Language]") && !e.target.closest("[hreflang]")) this.setState({ langOpen: false }); };
+    document.addEventListener("click", this._onDocClick);
+    this._observe();
+  }
+  componentDidUpdate(pp, prev) {
+    if (!this.deployed && pp.lang !== this.props.lang && T[this.props.lang]) this.setState({ lang: this.props.lang });
+    if (!this.deployed && pp.page !== this.props.page && this.props.page) this.setState({ page: this.props.page });
+    if (prev.page !== this.state.page || prev.lang !== this.state.lang) this._observe();
+  }
+  componentWillUnmount() {
+    window.removeEventListener("resize", this._onResize);
+    document.removeEventListener("click", this._onDocClick);
+    window.removeEventListener("scroll", this._onScroll);
+    window.removeEventListener("resize", this._onScroll);
+  }
+  _observe() {
+    if (!this._onScroll) {
+      let raf = 0;
+      this._onScroll = () => {
+        if (raf) return;
+        raf = requestAnimationFrame(() => {
+          raf = 0;
+          const els = document.querySelectorAll("[data-feat]");
+          if (!els.length) return;
+          const mid = window.innerHeight / 2;
+          let best = 0, bestD = Infinity;
+          els.forEach(el => {
+            const r = el.getBoundingClientRect();
+            const d = r.top <= mid && r.bottom >= mid ? 0 : Math.min(Math.abs(r.top - mid), Math.abs(r.bottom - mid));
+            if (d < bestD) { bestD = d; best = Number(el.getAttribute("data-feat")); }
+          });
+          if (best !== this.state.active) this.setState({ active: best });
+        });
+      };
+      window.addEventListener("scroll", this._onScroll, { passive: true });
+      window.addEventListener("resize", this._onScroll);
+    }
+    requestAnimationFrame(this._onScroll);
+  }
+
+  _href(lang, page) {
+    const file = page === "home" ? "" : page + ".html";
+    return this.deployed ? `${this.base}${lang}/${file}` : `?lang=${lang}${page === "home" ? "" : "&page=" + page}`;
+  }
+  _go(next) {
+    return e => {
+      if (this.deployed) return;
+      e.preventDefault();
+      this.setState({ ...next, langOpen: false });
+      window.scrollTo(0, 0);
+    };
+  }
+
+  renderVals() {
+    const { lang, page, active, w, faqOpen } = this.state;
+    const t = T[lang];
+    const L = LANGS.find(l => l.code === lang);
+    const narrow = w < 900;
+    const assets = this.base + "assets/";
+    const img = {};
+    ["home", "ipad", ...IMG_KEYS].forEach(k => img[k] = `${assets}screens/${lang}/${k}.jpg`);
+    const homeHref = this._href(lang, "home");
+    const anchor = id => (page === "home" ? "" : homeHref) + "#" + id;
+    const isPrivacy = page === "privacy";
+    return {
+      t, lang, img, narrow, wide: !narrow,
+      langCode: L.short || lang.toUpperCase(),
+      showNav: w >= 980,
+      isHome: page === "home", isLegal: page !== "home",
+      storeUrl: `https://apps.apple.com/${L.store}/app/id${APP_ID}`,
+      badge: assets + (lang === "de" ? "badge-de.svg" : "badge-en.svg"),
+      email: EMAIL, mailto: "mailto:" + EMAIL,
+      tagPrice: new Intl.NumberFormat(L.locale, { style: "currency", currency: L.cur, maximumFractionDigits: ["JPY", "KRW", "TWD", "RUB", "TRY"].includes(L.cur) ? 0 : 2 }).format(PRICE[L.cur]),
+      heroPad: narrow ? "56px 24px 40px" : "88px 24px 72px",
+      heroCols: narrow ? "minmax(0,1fr)" : "minmax(0,1.15fr) minmax(0,1fr)",
+      tagLeft: narrow ? "4%" : "-2%",
+      factCols: w < 640 ? "repeat(2, minmax(0,1fr))" : "repeat(4, minmax(0,1fr))",
+      secPad: narrow ? "80px 24px" : "130px 24px",
+      featCols: narrow ? "minmax(0,1fr)" : "minmax(0,1fr) minmax(0,0.85fr)",
+      featMinH: narrow ? "auto" : "72vh",
+      privCols: narrow ? "minmax(0,1fr)" : "repeat(3, minmax(0,1fr))",
+      faqCols: narrow ? "minmax(0,1fr)" : "minmax(0,0.8fr) minmax(0,1.2fr)",
+      ctaPad: narrow ? "64px 24px" : "100px 48px",
+      facts: t.facts.map((label, i) => ({ label, n: "0" + (i + 1) })),
+      feats: t.feats.map((f, i) => ({
+        ...f, n: `0${i + 1} / 04`, img: img[IMG_KEYS[i]],
+        opacity: narrow || i === active ? 1 : 0.32,
+        imgOpacity: i === active ? 1 : 0
+      })),
+      faqs: t.faqs.map((f, i) => ({
+        ...f, open: faqOpen === i, icon: faqOpen === i ? "−" : "+",
+        iconBg: faqOpen === i ? "#121212" : "#FFFFFF", iconCol: faqOpen === i ? "#FFFFFF" : "#121212",
+        toggle: () => this.setState({ faqOpen: faqOpen === i ? -1 : i })
+      })),
+      langOpen: this.state.langOpen,
+      toggleLang: () => this.setState(s => ({ langOpen: !s.langOpen })),
+      langList: LANGS.map(l => ({
+        code: l.code, name: l.name, href: this._href(l.code, page),
+        weight: l.code === lang ? 700 : 400, bg: l.code === lang ? "#F3F2EF" : "transparent",
+        onClick: this._go({ lang: l.code })
+      })),
+      hrefHome: homeHref, goHome: this._go({ page: "home" }),
+      hrefPrivacy: "https://dennisbortmes.github.io/legal/" + (lang === "de" ? "datenschutz" : "privacy"),
+      hrefImprint: "https://dennisbortmes.github.io/legal/" + (lang === "de" ? "impressum" : "imprint"),
+      hrefFeatures: anchor("features"), hrefPrivacySection: anchor("privacy"), hrefFaq: anchor("faq"),
+      legalTitle: isPrivacy ? t.pp_title : t.im_title,
+      legalMeta: isPrivacy ? t.pp_meta : t.im_meta,
+      legalSections: isPrivacy ? t.pp : t.im
+    };
+  }
+}
+</script>
+<noscript><main lang="es">
+<h1>Nifuda – Todo lo que tienes. En un solo lugar.</h1>
+<p>Nifuda registra despensa, tecnología, herramientas y colecciones con ubicación, cantidad y valor. Guardado en tu dispositivo, sincronizado por iCloud si quieres y sin cuenta.</p>
+<p><a href="https://apps.apple.com/es/app/id6782342697">App Store</a></p>
+<h2>Pensado para tu casa, no para un almacén.</h2>
+<h3>Un artículo en segundos.</h3>
+<p>Escanea un código de barras o escribe el nombre. Añade cantidad, precio y ubicación; los lotes guardan la fecha de compra y de caducidad.</p>
+<h3>Ordenado a tu manera.</h3>
+<p>Crea tus propias etiquetas y grupos, por categoría o estado. Las listas reúnen lo que va junto.</p>
+<h3>Avisado a tiempo.</h3>
+<p>Nifuda muestra lo que caduca pronto y lo que baja del stock mínimo, para que sepas qué falta antes de ir a comprar.</p>
+<h3>Conoce su valor.</h3>
+<p>Valor total, valor por ubicación y lo consumido este mes. Útil para el seguro, una mudanza o simplemente para tener una visión general.</p>
+<h2>Más espacio para tu inventario.</h2>
+<p>En el iPad ves todo tu inventario de un vistazo. Con iCloud, iPhone y iPad se sincronizan automáticamente.</p>
+<h2>Tus datos se quedan contigo.</h2>
+<h3>Sin cuenta</h3>
+<p>Sin registro, sin correo electrónico, sin contraseña. Abre la app y empieza.</p>
+<h3>Sin seguimiento</h3>
+<p>Nifuda no incluye herramientas de análisis ni de publicidad. No vemos lo que registras.</p>
+<h3>Tu iCloud</h3>
+<p>Los datos se guardan en tu dispositivo y, si quieres, en tu iCloud privado. No existe ningún servidor de Nifuda.</p>
+<h2>Preguntas frecuentes</h2>
+<h3>¿Necesito una cuenta?</h3>
+<p>No. Nifuda funciona sin registro. Tus datos están en tu dispositivo.</p>
+<h3>¿Dónde se guardan mis datos?</h3>
+<p>En local, en tu iPhone o iPad. Si quieres, Nifuda sincroniza tus dispositivos a través de tu iCloud privado.</p>
+<h3>¿Cuánto cuesta Nifuda?</h3>
+<p>La descarga es gratuita. Nifuda Pro desbloquea todas las funciones con un pago único, sin suscripción.</p>
+<h3>¿Puedo exportar mi inventario?</h3>
+<p>Sí, como informe PDF con valores, cantidades y ubicaciones, por ejemplo para el seguro del hogar.</p>
+<h3>¿En qué dispositivos funciona Nifuda?</h3>
+<p>En iPhone y iPad. La compra de Pro sirve para todos los dispositivos con el mismo Apple ID.</p>
+</main></noscript>
+</body>
+</html>
